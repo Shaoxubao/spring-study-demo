@@ -1,0 +1,12 @@
+.idea
+.idea/*
+.svn
+.svn/*
+*.iml
+.target
+*.tld
+*/*.iml
+*/target
+*/*/target
+*/dubbo-registry
+*/*/dubbo-registry

@@ -9,5 +9,9 @@
         <module name="spring-annotation" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="spring-annotation" target="1.5" />
+      <module name="spring-study" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>
