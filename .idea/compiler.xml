@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="spring-annotation" />
+        <module name="spring-dependinject" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="spring-annotation" target="1.5" />
+      <module name="spring-dependinject" target="1.5" />
       <module name="spring-study" target="1.5" />
     </bytecodeTargetLevel>
   </component>
