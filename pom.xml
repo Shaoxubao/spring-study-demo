@@ -10,7 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>spring-annotation</module>
-        <module>spring-depend-inject</module>
+        <module>spring-dependency-inject</module>
     </modules>
 
     <properties>
