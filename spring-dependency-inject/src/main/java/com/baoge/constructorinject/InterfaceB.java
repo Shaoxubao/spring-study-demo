@@ -11,15 +11,15 @@ import org.springframework.stereotype.Component;
 @Component
 public class InterfaceB {
 
-//    public InterfaceB() {
-//        System.out.println("InterfaceB无参构造方法调用...");
-//    }
+    private InterfaceA interfaceA;
 
-//    private InterfaceA interfaceA;
-//
-//    public InterfaceB(InterfaceA a) {
-//        this.interfaceA = a;
-//    System.out.println("InterfaceB有参构造方法调用...");
-//    }
+    public InterfaceB() {
+        System.out.println("InterfaceB无参构造方法调用...");
+    }
+
+    public InterfaceB(InterfaceA a) {
+        this.interfaceA = a;
+        System.out.println("InterfaceB有参构造方法调用...");
+    }
 
 }

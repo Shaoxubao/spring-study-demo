@@ -2,52 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa5e2d13-c39e-4e13-9b36-8dc5b6cb62d3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/spring-dependency-inject/src/main/java/com/baoge/constructorinject/InterfaceA.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-dependency-inject/src/main/java/com/baoge/constructorinject/InterfaceB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-dependency-inject/src/main/java/com/baoge/constructorinject/config/MainConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-dependency-inject/src/main/java/com/baoge/setterinject/InterfaceC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-dependency-inject/src/main/java/com/baoge/setterinject/InterfaceD.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-dependency-inject/src/main/java/com/baoge/setterinject/config/MyConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-dependency-inject/src/main/resources/bean-constructor-inject.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-dependency-inject/src/test/java/com/baoge/DependInjectTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-dependency-inject/src/test/java/com/baoge/SpringTestBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-annotation/target/classes/bean.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-annotation/target/classes/com/baoge/bean/Blue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-annotation/target/classes/com/baoge/bean/Boss.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-annotation/target/classes/com/baoge/bean/Car.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-annotation/target/classes/com/baoge/bean/Cat.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-annotation/target/classes/com/baoge/bean/Color.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-annotation/target/classes/com/baoge/bean/ColorFactoryBean.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-annotation/target/classes/com/baoge/bean/Dog.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-annotation/target/classes/com/baoge/bean/MyBeanPostProcessor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-annotation/target/classes/com/baoge/bean/Person.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-annotation/target/classes/com/baoge/bean/RainBow.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-annotation/target/classes/com/baoge/bean/Red.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-annotation/target/classes/com/baoge/bean/Yellow.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-annotation/target/classes/com/baoge/condition/LinuxCondition.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-annotation/target/classes/com/baoge/condition/WindowsCondition.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-annotation/target/classes/com/baoge/config/MainConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-annotation/target/classes/com/baoge/config/MainConfig2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-annotation/target/classes/com/baoge/config/MainConfigOfAutowired.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-annotation/target/classes/com/baoge/config/MainConfigOfLifeCycle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-annotation/target/classes/com/baoge/config/MainConfigOfProfile.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-annotation/target/classes/com/baoge/config/MainConfigPropertyValue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-annotation/target/classes/com/baoge/config/MyImportBeanDefinitionRegistrar.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-annotation/target/classes/com/baoge/config/MyImportSelector.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-annotation/target/classes/com/baoge/config/MyTypeFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-annotation/target/classes/com/baoge/controller/BookController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-annotation/target/classes/com/baoge/dao/BookDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-annotation/target/classes/com/baoge/service/BookServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-annotation/target/classes/dbconfig.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-annotation/target/classes/person.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-annotation/target/test-classes/com/baoge/IOCTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-depend-inject/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-dependency-inject/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-depend-inject/spring-depend-inject.md" beforeDir="false" afterPath="$PROJECT_DIR$/spring-dependency-inject/spring-dependcy-inject.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-depend-inject/src/main/java/com/baoge/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-dependency-inject/src/main/java/com/baoge/constructorinject/InterfaceB.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-dependency-inject/src/main/java/com/baoge/constructorinject/InterfaceB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-dependency-inject/src/main/java/com/baoge/setterinject/InterfaceC.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-dependency-inject/src/main/java/com/baoge/setterinject/InterfaceC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-dependency-inject/src/main/java/com/baoge/setterinject/InterfaceD.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-dependency-inject/src/main/java/com/baoge/setterinject/InterfaceD.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/spring-annotation/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -79,30 +37,34 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="class" value="23" />
+          <entry key="gitignore" value="1" />
           <entry key="iml" value="3" />
-          <entry key="java" value="18" />
+          <entry key="java" value="148" />
           <entry key="md" value="2" />
-          <entry key="xml" value="6" />
+          <entry key="xml" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="CLASS" value="23" />
           <entry key="IDEA_MODULE" value="3" />
-          <entry key="JAVA" value="18" />
+          <entry key="JAVA" value="148" />
           <entry key="Markdown" value="2" />
-          <entry key="XML" value="6" />
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="XML" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="2" />
-          <entry key="java" value="536" />
+          <entry key="java" value="588" />
           <entry key="xml" value="44" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="536" />
+          <entry key="JAVA" value="588" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="XML" value="44" />
         </counts>
@@ -111,41 +73,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring-dependency-inject/src/main/resources/bean-constructor-inject.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="14" column="8" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/spring-dependency-inject/src/main/java/com/baoge/constructorinject/InterfaceB.java">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.0.RELEASE/spring-context-5.1.0.RELEASE-sources.jar!/org/springframework/context/support/AbstractApplicationContext.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring-dependency-inject/src/main/java/com/baoge/constructorinject/InterfaceA.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring-dependency-inject/src/test/java/com/baoge/DependInjectTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="374">
+              <caret line="547" column="61" lean-forward="true" selection-start-line="547" selection-start-column="61" selection-end-line="547" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -158,6 +90,15 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>postProcessBeanFactory</find>
+      <find>invokeBeanFactoryPostProcessors</find>
+      <find>doScan</find>
+      <find>addSingletonFactory</find>
+      <find>populateBean</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -190,6 +131,8 @@
         <option value="$PROJECT_DIR$/spring-dependency-inject/src/test/java/com/baoge/SpringTestBase.java" />
         <option value="$PROJECT_DIR$/spring-dependency-inject/src/test/java/com/baoge/DependInjectTest.java" />
         <option value="$PROJECT_DIR$/spring-dependency-inject/src/main/java/com/baoge/constructorinject/InterfaceA.java" />
+        <option value="$PROJECT_DIR$/spring-dependency-inject/src/main/java/com/baoge/setterinject/InterfaceC.java" />
+        <option value="$PROJECT_DIR$/spring-dependency-inject/src/main/java/com/baoge/setterinject/InterfaceD.java" />
         <option value="$PROJECT_DIR$/spring-dependency-inject/src/main/java/com/baoge/constructorinject/InterfaceB.java" />
       </list>
     </option>
@@ -290,6 +233,27 @@
               <item name="spring-dependency-inject" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="baoge" type="462c0819:PsiDirectoryNode" />
+              <item name="constructorinject" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-study-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-dependency-inject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="baoge" type="462c0819:PsiDirectoryNode" />
+              <item name="setterinject" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-study-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-dependency-inject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -316,6 +280,298 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="baoge" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="spring-study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="spring-study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="spring-study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lang" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lang" type="462c0819:PsiDirectoryNode" />
+              <item name="reflect" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="sun" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="sun" type="462c0819:PsiDirectoryNode" />
+              <item name="reflect" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: junit:junit:4.12" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="spring-study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: junit:junit:4.12" type="70bed36:NamedLibraryElementNode" />
+              <item name="junit-4.12.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: junit:junit:4.12" type="70bed36:NamedLibraryElementNode" />
+              <item name="junit-4.12.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="junit" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: junit:junit:4.12" type="70bed36:NamedLibraryElementNode" />
+              <item name="junit-4.12.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="junit" type="462c0819:PsiDirectoryNode" />
+              <item name="internal" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: junit:junit:4.12" type="70bed36:NamedLibraryElementNode" />
+              <item name="junit-4.12.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="junit" type="462c0819:PsiDirectoryNode" />
+              <item name="internal" type="462c0819:PsiDirectoryNode" />
+              <item name="runners" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: junit:junit:4.12" type="70bed36:NamedLibraryElementNode" />
+              <item name="junit-4.12.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="junit" type="462c0819:PsiDirectoryNode" />
+              <item name="internal" type="462c0819:PsiDirectoryNode" />
+              <item name="runners" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: junit:junit:4.12" type="70bed36:NamedLibraryElementNode" />
+              <item name="junit-4.12.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="junit" type="462c0819:PsiDirectoryNode" />
+              <item name="internal" type="462c0819:PsiDirectoryNode" />
+              <item name="runners" type="462c0819:PsiDirectoryNode" />
+              <item name="statements" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: junit:junit:4.12" type="70bed36:NamedLibraryElementNode" />
+              <item name="junit-4.12.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="junit" type="462c0819:PsiDirectoryNode" />
+              <item name="runner" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: junit:junit:4.12" type="70bed36:NamedLibraryElementNode" />
+              <item name="junit-4.12.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="junit" type="462c0819:PsiDirectoryNode" />
+              <item name="runners" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: junit:junit:4.12" type="70bed36:NamedLibraryElementNode" />
+              <item name="junit-4.12.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="junit" type="462c0819:PsiDirectoryNode" />
+              <item name="runners" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-aop:5.1.0.RELEASE" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="spring-study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-aop:5.1.0.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-aop-5.1.0.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-aop:5.1.0.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-aop-5.1.0.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-aop:5.1.0.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-aop-5.1.0.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="aop" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-aop:5.1.0.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-aop-5.1.0.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="aop" type="462c0819:PsiDirectoryNode" />
+              <item name="scope" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-beans:5.1.0.RELEASE" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="spring-study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-beans:5.1.0.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-beans-5.1.0.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-beans:5.1.0.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-beans-5.1.0.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="beans" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-beans:5.1.0.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-beans-5.1.0.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="beans" type="462c0819:PsiDirectoryNode" />
+              <item name="factory" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-beans:5.1.0.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-beans-5.1.0.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="beans" type="462c0819:PsiDirectoryNode" />
+              <item name="factory" type="462c0819:PsiDirectoryNode" />
+              <item name="annotation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-beans:5.1.0.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-beans-5.1.0.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="beans" type="462c0819:PsiDirectoryNode" />
+              <item name="factory" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-beans:5.1.0.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-beans-5.1.0.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="beans" type="462c0819:PsiDirectoryNode" />
+              <item name="factory" type="462c0819:PsiDirectoryNode" />
+              <item name="support" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-context:5.1.0.RELEASE" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="spring-study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-context:5.1.0.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-context-5.1.0.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-context:5.1.0.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-context-5.1.0.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="springframework" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-context:5.1.0.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-context-5.1.0.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="springframework" type="462c0819:PsiDirectoryNode" />
+              <item name="context" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-context:5.1.0.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-context-5.1.0.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="springframework" type="462c0819:PsiDirectoryNode" />
+              <item name="context" type="462c0819:PsiDirectoryNode" />
+              <item name="annotation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-context:5.1.0.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-context-5.1.0.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="springframework" type="462c0819:PsiDirectoryNode" />
+              <item name="context" type="462c0819:PsiDirectoryNode" />
+              <item name="support" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-core:5.1.0.RELEASE" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="spring-study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-core:5.1.0.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-core-5.1.0.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-core:5.1.0.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-core-5.1.0.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="springframework" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-core:5.1.0.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-core-5.1.0.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="springframework" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -326,13 +582,14 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="Test&#9;FILE&#9;file://D:/workspace/spring-study-demo/spring-dependency-inject/src/test/java/com/baoge/DependInjectTest.java&#10;ClassPathXmlApplicationContext&#9;FILE&#9;jar://D:/repository/org/springframework/spring-context/5.1.0.RELEASE/spring-context-5.1.0.RELEASE-sources.jar!/org/springframework/context/support/ClassPathXmlApplicationContext.java&#10;ClassPathBeanDefinitionScanner&#9;FILE&#9;jar://D:/repository/org/springframework/spring-context/5.1.0.RELEASE/spring-context-5.1.0.RELEASE-sources.jar!/org/springframework/context/annotation/ClassPathBeanDefinitionScanner.java&#10;ComponentScanBeanDefinitionParser&#9;FILE&#9;jar://D:/repository/org/springframework/spring-context/5.1.0.RELEASE/spring-context-5.1.0.RELEASE-sources.jar!/org/springframework/context/annotation/ComponentScanBeanDefinitionParser.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1568480382211" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1568564265793" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -354,7 +611,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.DependInjectTest.testConstructorInjection">
     <configuration name="DependInjectTest.testConstructorInjection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring-depend-inject" />
       <extension name="coverage">
@@ -371,9 +628,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DependInjectTest.testSetterInject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-depend-inject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.baoge.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.baoge" />
+      <option name="MAIN_CLASS_NAME" value="com.baoge.DependInjectTest" />
+      <option name="METHOD_NAME" value="testSetterInject" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.DependInjectTest.testConstructorInjection" />
+      <item itemvalue="JUnit.DependInjectTest.testSetterInject" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.DependInjectTest.testConstructorInjection" />
+        <item itemvalue="JUnit.DependInjectTest.testSetterInject" />
       </list>
     </recent_temporary>
   </component>
@@ -388,50 +666,50 @@
       <option name="presentableId" value="Default" />
       <updated>1568389552553</updated>
       <workItem from="1568389554137" duration="7644000" />
-      <workItem from="1568479856232" duration="509000" />
+      <workItem from="1568479856232" duration="20637000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DependInjectTest_testConstructorInjection - 2019.09.15 at 00h 43m 01s.xml">
+    <history-entry file="DependInjectTest_testConstructorInjection - 2019.09.15 at 22h 18m 21s.xml">
       <configuration name="DependInjectTest.testConstructorInjection" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DependInjectTest_testConstructorInjection - 2019.09.15 at 00h 43m 10s.xml">
+    <history-entry file="DependInjectTest_testConstructorInjection - 2019.09.15 at 22h 18m 50s.xml">
       <configuration name="DependInjectTest.testConstructorInjection" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DependInjectTest_testConstructorInjection - 2019.09.15 at 00h 45m 58s.xml">
+    <history-entry file="DependInjectTest_testConstructorInjection - 2019.09.15 at 22h 20m 15s.xml">
       <configuration name="DependInjectTest.testConstructorInjection" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DependInjectTest_testConstructorInjection - 2019.09.15 at 00h 48m 15s.xml">
+    <history-entry file="DependInjectTest_testConstructorInjection - 2019.09.15 at 22h 20m 52s.xml">
       <configuration name="DependInjectTest.testConstructorInjection" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DependInjectTest_testConstructorInjection - 2019.09.15 at 00h 53m 34s.xml">
+    <history-entry file="DependInjectTest_testSetterInject - 2019.09.15 at 22h 45m 17s.xml">
+      <configuration name="DependInjectTest.testSetterInject" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DependInjectTest_testConstructorInjection - 2019.09.15 at 22h 55m 01s.xml">
       <configuration name="DependInjectTest.testConstructorInjection" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DependInjectTest_testConstructorInjection_(1) - 2019.09.15 at 00h 53m 46s.xml">
-      <configuration name="DependInjectTest.testConstructorInjection (1)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DependInjectTest_testConstructorInjection - 2019.09.15 at 00h 54m 07s.xml">
+    <history-entry file="DependInjectTest_testConstructorInjection - 2019.09.15 at 22h 57m 32s.xml">
       <configuration name="DependInjectTest.testConstructorInjection" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DependInjectTest_testConstructorInjection - 2019.09.15 at 00h 56m 43s.xml">
+    <history-entry file="DependInjectTest_testConstructorInjection - 2019.09.15 at 23h 04m 49s.xml">
       <configuration name="DependInjectTest.testConstructorInjection" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DependInjectTest_testConstructorInjection - 2019.09.15 at 00h 57m 18s.xml">
+    <history-entry file="DependInjectTest_testConstructorInjection - 2019.09.15 at 23h 06m 19s.xml">
       <configuration name="DependInjectTest.testConstructorInjection" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DependInjectTest_testConstructorInjection - 2019.09.15 at 00h 57m 51s.xml">
+    <history-entry file="DependInjectTest_testConstructorInjection - 2019.09.15 at 23h 20m 28s.xml">
       <configuration name="DependInjectTest.testConstructorInjection" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8153000" />
+    <option name="totallyTimeSpent" value="28281000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="704" extended-state="6" />
+    <frame x="-7" y="-7" width="1295" height="704" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24746291" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.074160814" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -441,14 +719,14 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.19723183" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.30795848" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49960968" weight="0.12802768" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32871974" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5003903" side_tool="true" weight="0.24740484" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.51384085" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -456,12 +734,44 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Maven Projects" order="5" sideWeight="0.49723756" visible="true" weight="0.16471507" />
+      <window_info anchor="right" id="Maven Projects" order="5" sideWeight="0.49723756" weight="0.04918033" />
       <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="Coverage" order="9" sideWeight="0.50276244" side_tool="true" weight="0.33099142" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.074160814" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.19723183" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49960968" visible="true" weight="0.12802768" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5003903" side_tool="true" weight="0.24740484" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.51384085" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" sideWeight="0.49723756" weight="0.04918033" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Coverage" order="9" sideWeight="0.50276244" side_tool="true" weight="0.33099142" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -469,150 +779,504 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.0.RELEASE/spring-beans-5.1.0.RELEASE-sources.jar!/org/springframework/beans/factory/support/DefaultSingletonBeanRegistry.java</url>
+          <line>338</line>
+          <properties />
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-dependency-inject/src/main/java/com/baoge/constructorinject/InterfaceA.java</url>
+          <line>16</line>
+          <properties />
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-dependency-inject/src/main/java/com/baoge/setterinject/InterfaceC.java</url>
+          <line>16</line>
+          <properties />
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-dependency-inject/src/main/java/com/baoge/setterinject/InterfaceC.java</url>
+          <line>20</line>
+          <properties />
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-dependency-inject/src/main/java/com/baoge/constructorinject/InterfaceA.java</url>
+          <line>21</line>
+          <properties />
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-dependency-inject/src/main/java/com/baoge/constructorinject/InterfaceB.java</url>
+          <line>16</line>
+          <properties />
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <condition expression="beanName.equals(&quot;interfaceB&quot;) || beanName.equals(&quot;interfaceA&quot;)" language="JAVA" />
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.0.RELEASE/spring-beans-5.1.0.RELEASE-sources.jar!/org/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.java</url>
+          <line>1260</line>
+          <properties />
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <condition expression="beanName.equals(&quot;interfaceB&quot;) || beanName.equals(&quot;interfaceA&quot;)" language="JAVA" />
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.0.RELEASE/spring-beans-5.1.0.RELEASE-sources.jar!/org/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.java</url>
+          <line>574</line>
+          <properties />
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <condition expression="beanName.equals(&quot;interfaceB&quot;) || beanName.equals(&quot;interfaceA&quot;)" language="JAVA" />
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.0.RELEASE/spring-beans-5.1.0.RELEASE-sources.jar!/org/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.java</url>
+          <line>497</line>
+          <properties />
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.0.RELEASE/spring-beans-5.1.0.RELEASE-sources.jar!/org/springframework/beans/factory/support/ConstructorResolver.java</url>
+          <line>824</line>
+          <properties />
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+      </breakpoints>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+    </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="breakpointCondition">
+      <expression>
+        <expression-string>beanName.equals(&quot;interfaceB&quot;) || beanName.equals(&quot;interfaceA&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>beanName.equals(&quot;interfaceB&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>isStereotypeWithNameValue(type, amd.getMetaAnnotationTypes(type), attributes)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/spring-annotation/src/main/java/com/baoge/service/BookServiceImpl.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="20" column="28" lean-forward="true" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+        <state relative-caret-position="47">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-annotation/src/main/java/com/baoge/config/MainConfig.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/model/FrameworkMethod.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="18" selection-start-line="18" selection-end-line="18" selection-end-column="14" />
+        <state relative-caret-position="71">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="e#870#1063#0" expanded="true" />
+            <element signature="e#1062#1063#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-depend-inject/src/main/java/com/baoge/App.java" />
-    <entry file="file://$PROJECT_DIR$/spring-dependcy-inject/dependcyInject.md" />
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/statements/InvokeMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/BlockJUnit4ClassRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/Suite.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="73">
+          <caret line="72" selection-start-line="72" selection-end-line="72" />
+          <folding>
+            <element signature="e#2535#2536#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="240" selection-start-line="240" selection-end-line="240" />
+          <folding>
+            <element signature="e#2111#2112#0" expanded="true" />
+            <element signature="e#2155#2156#0" expanded="true" />
+            <element signature="e#5951#6086#0" expanded="true" />
+            <element signature="e#6085#6086#0" expanded="true" />
+            <element signature="e#6484#6648#0" expanded="true" />
+            <element signature="e#6647#6648#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runner/JUnitCore.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="70" column="38" lean-forward="true" selection-start-line="70" selection-start-column="38" selection-end-line="70" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/runners/model/FrameworkMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="44" column="18" selection-start-line="44" selection-start-column="18" selection-end-line="44" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/internal/runners/statements/InvokeMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/runners/ParentRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="357" column="16" selection-start-line="357" selection-start-column="16" selection-end-line="357" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/runner/JUnitCore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="130" column="18" selection-start-line="130" selection-start-column="18" selection-end-line="130" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/runners/Suite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="126" column="19" selection-start-line="126" selection-start-column="19" selection-end-line="126" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/runners/BlockJUnit4ClassRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="72" column="19" selection-start-line="72" selection-start-column="19" selection-end-line="72" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="11" column="39" lean-forward="true" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.0.RELEASE/spring-context-5.1.0.RELEASE-sources.jar!/org/springframework/context/annotation/AnnotationBeanNameGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="96" column="51" lean-forward="true" selection-start-line="96" selection-start-column="51" selection-end-line="96" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.0.RELEASE/spring-beans-5.1.0.RELEASE-sources.jar!/org/springframework/beans/factory/support/AbstractBeanDefinitionReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="183" column="15" selection-start-line="183" selection-start-column="15" selection-end-line="183" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.0.RELEASE/spring-beans-5.1.0.RELEASE-sources.jar!/org/springframework/beans/factory/support/BeanDefinitionReaderUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="178" column="23" lean-forward="true" selection-start-line="178" selection-start-column="23" selection-end-line="178" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.1.0.RELEASE/spring-aop-5.1.0.RELEASE.jar!/org/springframework/aop/scope/ScopedProxyUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="45" column="29" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.0.RELEASE/spring-context-5.1.0.RELEASE-sources.jar!/org/springframework/context/annotation/ScopedProxyCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="39" column="39" lean-forward="true" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.0.RELEASE/spring-beans-5.1.0.RELEASE-sources.jar!/org/springframework/beans/factory/annotation/AnnotatedGenericBeanDefinition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="100" lean-forward="true" selection-start-line="100" selection-end-line="100" />
+          <folding>
+            <element signature="e#3995#3996#0" expanded="true" />
+            <element signature="e#4022#4023#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.0.RELEASE/spring-context-5.1.0.RELEASE-sources.jar!/org/springframework/context/annotation/AnnotationConfigUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="290" column="31" lean-forward="true" selection-start-line="290" selection-start-column="31" selection-end-line="290" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.0.RELEASE/spring-context-5.1.0.RELEASE-sources.jar!/org/springframework/context/annotation/AnnotatedBeanDefinitionReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="215" selection-start-line="215" selection-end-line="215" />
+          <folding>
+            <element signature="e#5722#5723#0" expanded="true" />
+            <element signature="e#5777#5778#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.0.RELEASE/spring-context-5.1.0.RELEASE-sources.jar!/org/springframework/context/annotation/ComponentScanAnnotationParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="113" selection-start-line="113" selection-end-line="113" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.0.RELEASE/spring-context-5.1.0.RELEASE-sources.jar!/org/springframework/context/annotation/ClassPathBeanDefinitionScanner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="278" selection-start-line="278" selection-end-line="278" />
+          <folding>
+            <element signature="e#3564#3565#0" expanded="true" />
+            <element signature="e#3591#3592#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.0.RELEASE/spring-context-5.1.0.RELEASE-sources.jar!/org/springframework/context/annotation/ConfigurationClassParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="285" selection-start-line="285" selection-end-line="285" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.0.RELEASE/spring-context-5.1.0.RELEASE-sources.jar!/org/springframework/context/support/AbstractXmlApplicationContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="80" column="19" selection-start-line="80" selection-start-column="19" selection-end-line="80" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.0.RELEASE/spring-context-5.1.0.RELEASE-sources.jar!/org/springframework/context/support/ClassPathXmlApplicationContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#8402#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.0.RELEASE/spring-context-5.1.0.RELEASE-sources.jar!/org/springframework/context/support/AbstractRefreshableApplicationContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-26">
+          <caret line="123" column="25" selection-start-line="123" selection-start-column="25" selection-end-line="123" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.0.RELEASE/spring-context-5.1.0.RELEASE-sources.jar!/org/springframework/context/support/GenericApplicationContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="268" selection-start-line="268" selection-end-line="268" />
+          <folding>
+            <element signature="e#11449#11450#0" expanded="true" />
+            <element signature="e#11479#11480#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.0.RELEASE/spring-context-5.1.0.RELEASE-sources.jar!/org/springframework/context/support/PostProcessorRegistrationDelegate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-25">
+          <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.0.RELEASE/spring-context-5.1.0.RELEASE-sources.jar!/org/springframework/context/annotation/ConfigurationClassPostProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="326" selection-start-line="326" selection-end-line="326" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-dependency-inject/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="18" lean-forward="true" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/spring-dependency-inject/src/main/java/com/baoge/setterinject/InterfaceD.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-          <folding>
-            <element signature="e#339#340#0" expanded="true" />
-            <element signature="e#383#384#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-dependency-inject/src/main/java/com/baoge/setterinject/config/MyConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="39" lean-forward="true" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-dependency-inject/spring-dependcy-inject.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="76">
-            <caret line="4" column="10" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-dependency-inject/spring-dependency-inject.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-annotation/src/main/resources/bean.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+        <state relative-caret-position="136">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spring-dependency-inject/src/main/java/com/baoge/setterinject/InterfaceC.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
-          <folding>
-            <element signature="e#335#336#0" expanded="true" />
-            <element signature="e#379#380#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="184">
+          <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-dependency-inject/src/main/java/com/baoge/constructorinject/config/MainConfig.java">
+    <entry file="jar://D:/javatools/jdk1.8.0/jdk/jre/lib/rt.jar!/sun/reflect/NativeConstructorAccessorImpl.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state>
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-study.iml" />
-    <entry file="file://$PROJECT_DIR$/spring-dependency-inject/spring-depend-inject.iml" />
-    <entry file="file://$PROJECT_DIR$/spring-dependency-inject/pom.xml">
+    <entry file="jar://D:/javatools/jdk1.8.0/jdk/jre/lib/rt.jar!/sun/reflect/DelegatingConstructorAccessorImpl.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+        <state>
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-annotation/src/test/java/com/baoge/IOCTest.java">
+    <entry file="jar://D:/javatools/jdk1.8.0/jdk/src.zip!/java/lang/reflect/Constructor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-dependency-inject/src/test/java/com/baoge/SpringTestBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="23" column="19" lean-forward="true" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-dependency-inject/src/main/resources/bean-constructor-inject.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="14" column="8" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-dependency-inject/src/test/java/com/baoge/DependInjectTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-dependency-inject/src/main/java/com/baoge/constructorinject/InterfaceA.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        <state>
+          <caret line="423" column="20" selection-start-line="423" selection-start-column="20" selection-end-line="423" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spring-dependency-inject/src/main/java/com/baoge/constructorinject/InterfaceB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+        <state>
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#275#276#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.0.RELEASE/spring-beans-5.1.0.RELEASE-sources.jar!/org/springframework/beans/factory/support/AbstractBeanDefinition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="960" selection-start-line="960" selection-end-line="960" />
+          <folding>
+            <element signature="e#30253#30254#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.0.RELEASE/spring-beans-5.1.0.RELEASE-sources.jar!/org/springframework/beans/factory/config/DependencyDescriptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="272" selection-start-line="272" selection-end-line="272" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-dependency-inject/src/main/java/com/baoge/constructorinject/InterfaceA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.0.RELEASE/spring-beans-5.1.0.RELEASE-sources.jar!/org/springframework/beans/BeanUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="170" selection-start-line="170" selection-end-line="170" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.0.RELEASE/spring-beans-5.1.0.RELEASE-sources.jar!/org/springframework/beans/factory/support/SimpleInstantiationStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="116" selection-start-line="116" selection-end-line="116" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.0.RELEASE/spring-beans-5.1.0.RELEASE-sources.jar!/org/springframework/beans/factory/support/ConstructorResolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="284" selection-start-line="284" selection-end-line="284" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.0.RELEASE/spring-beans-5.1.0.RELEASE-sources.jar!/org/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="501" selection-start-line="501" selection-end-line="501" />
+          <folding>
+            <element signature="e#8706#8707#0" expanded="true" />
+            <element signature="e#8746#8747#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.0.RELEASE/spring-beans-5.1.0.RELEASE-sources.jar!/org/springframework/beans/factory/support/DefaultSingletonBeanRegistry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="250" selection-start-line="250" selection-end-line="250" />
+          <folding>
+            <element signature="e#7034#7035#0" expanded="true" />
+            <element signature="e#7076#7077#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.0.RELEASE/spring-beans-5.1.0.RELEASE-sources.jar!/org/springframework/beans/factory/support/AbstractBeanFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="198" selection-start-line="198" selection-end-line="198" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.0.RELEASE/spring-beans-5.1.0.RELEASE-sources.jar!/org/springframework/beans/factory/support/DefaultListableBeanFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="868" selection-start-line="868" selection-end-line="868" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-dependency-inject/src/test/java/com/baoge/DependInjectTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="33" column="82" selection-start-line="33" selection-start-column="82" selection-end-line="33" selection-end-column="82" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.0.RELEASE/spring-context-5.1.0.RELEASE-sources.jar!/org/springframework/context/annotation/AnnotationConfigApplicationContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="87" column="11" selection-start-line="87" selection-start-column="11" selection-end-line="87" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.0.RELEASE/spring-context-5.1.0.RELEASE-sources.jar!/org/springframework/context/support/AbstractApplicationContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="547" column="61" lean-forward="true" selection-start-line="547" selection-start-column="61" selection-end-line="547" selection-end-column="61" />
         </state>
       </provider>
     </entry>

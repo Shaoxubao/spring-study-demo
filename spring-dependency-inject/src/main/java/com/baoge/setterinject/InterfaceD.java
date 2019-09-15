@@ -13,8 +13,13 @@ public class InterfaceD {
 
     private InterfaceC interfaceC;
 
+//    public InterfaceD() {
+//        System.out.println("InterfaceD无参构造方法调用...");
+//    }
+
     public void setInterfaceC(InterfaceC interfaceC) {
         this.interfaceC = interfaceC;
+        System.out.println("InterfaceD setter 方法调用...");
     }
 
 }
