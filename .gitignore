@@ -1,5 +1,6 @@
 .idea
 .idea/*
+.idea/*.xml
 .svn
 .svn/*
 *.iml

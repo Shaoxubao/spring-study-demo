@@ -13,9 +13,9 @@ public class InterfaceB {
 
     private InterfaceA interfaceA;
 
-    public InterfaceB() {
-        System.out.println("InterfaceB无参构造方法调用...");
-    }
+//    public InterfaceB() {
+//        System.out.println("InterfaceB无参构造方法调用...");
+//    }
 
     public InterfaceB(InterfaceA a) {
         this.interfaceA = a;

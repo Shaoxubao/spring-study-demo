@@ -22,5 +22,9 @@ public class InterfaceD {
         System.out.println("InterfaceD setter 方法调用...");
     }
 
+    public String hello() {
+        return "hello world";
+    }
+
 }
 
