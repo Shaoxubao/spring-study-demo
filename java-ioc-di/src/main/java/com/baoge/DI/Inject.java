@@ -1,4 +1,4 @@
-package com.baoge.DI_simaple.DI;
+package com.baoge.DI;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

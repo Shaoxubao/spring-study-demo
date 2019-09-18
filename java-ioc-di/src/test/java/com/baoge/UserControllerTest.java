@@ -1,6 +1,6 @@
 package com.baoge;
 
-import com.baoge.DI_simaple.DI.BeanFactory;
+import com.baoge.DI.BeanFactory;
 import com.baoge.controller.UserController;
 
 /**

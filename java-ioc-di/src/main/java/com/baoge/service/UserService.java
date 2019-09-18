@@ -1,6 +1,6 @@
 package com.baoge.service;
 
-import com.baoge.DI_simaple.DI.Inject;
+import com.baoge.DI.Inject;
 import com.baoge.dao.ClassDao;
 import com.baoge.dao.UserDao;
 
