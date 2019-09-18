@@ -1,5 +1,6 @@
 package com.baoge.setterinject;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 /**
@@ -17,6 +18,7 @@ public class InterfaceD {
 //        System.out.println("InterfaceD无参构造方法调用...");
 //    }
 
+    @Autowired
     public void setInterfaceC(InterfaceC interfaceC) {
         this.interfaceC = interfaceC;
         System.out.println("InterfaceD setter 方法调用...");
