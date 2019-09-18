@@ -12,6 +12,7 @@ public class BeanFactory {
 
         Q result = null;
         try {
+            // =========实例化==========
             result = clazz.newInstance();
         } catch (InstantiationException e) {
             e.printStackTrace();
@@ -28,6 +29,8 @@ public class BeanFactory {
         for (Field field : fields) {  //  查找字段中含有依赖注入的字段 存在就进行注入
             Inject inject = field.getAnnotation(Inject.class);
             if (inject != null) {
+
+                // =========依赖注入==========
                 Object object = getBean(field.getType());
                 if (!field.isAccessible())
                     field.setAccessible(true);
@@ -39,6 +42,7 @@ public class BeanFactory {
                 }
             }
         }
+
         return result;
     }
 
