@@ -11,6 +11,7 @@
     <modules>
         <module>spring-annotation</module>
         <module>spring-dependency-inject</module>
+        <module>java-ioc-di</module>
     </modules>
 
     <properties>
