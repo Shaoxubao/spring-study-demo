@@ -1,6 +1,7 @@
 .idea
 .idea/*
 .idea/*.xml
+.idea/workspace.xml
 .svn
 .svn/*
 *.iml

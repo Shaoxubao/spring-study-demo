@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa5e2d13-c39e-4e13-9b36-8dc5b6cb62d3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-dependency-inject/src/main/java/com/baoge/setterinject/InterfaceD.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-dependency-inject/src/main/java/com/baoge/setterinject/InterfaceD.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/spring-annotation/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -79,7 +79,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="13" />
-          <entry key="gitignore" value="1" />
+          <entry key="gitignore" value="2" />
           <entry key="java" value="72" />
         </counts>
       </usages-collector>
@@ -87,19 +87,19 @@
         <counts>
           <entry key="CLASS" value="13" />
           <entry key="JAVA" value="72" />
-          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="gitignore" value="5" />
+          <entry key="gitignore" value="6" />
           <entry key="java" value="80" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="80" />
-          <entry key="PLAIN_TEXT" value="5" />
+          <entry key="PLAIN_TEXT" value="6" />
         </counts>
       </usages-collector>
     </session>
@@ -130,7 +130,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spring-dependency-inject/src/main/java/com/baoge/setterinject/InterfaceD.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="478">
@@ -138,6 +138,15 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -299,8 +308,8 @@
         <option value="$PROJECT_DIR$/spring-dependency-inject/src/main/java/com/baoge/constructorinject/InterfaceB.java" />
         <option value="$PROJECT_DIR$/spring-dependency-inject/src/test/java/com/baoge/DependInjectTest.java" />
         <option value="$PROJECT_DIR$/spring-dependency-inject/src/main/java/com/baoge/setterinject/InterfaceC.java" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/spring-dependency-inject/src/main/java/com/baoge/setterinject/InterfaceD.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -617,7 +626,7 @@
     <property name="SearchEverywhereHistoryKey" value="Test&#9;FILE&#9;file://D:/workspace/spring-study-demo/spring-dependency-inject/src/test/java/com/baoge/DependInjectTest.java&#10;ClassPathXmlApplicationContext&#9;FILE&#9;jar://D:/repository/org/springframework/spring-context/5.1.0.RELEASE/spring-context-5.1.0.RELEASE-sources.jar!/org/springframework/context/support/ClassPathXmlApplicationContext.java&#10;ClassPathBeanDefinitionScanner&#9;FILE&#9;jar://D:/repository/org/springframework/spring-context/5.1.0.RELEASE/spring-context-5.1.0.RELEASE-sources.jar!/org/springframework/context/annotation/ClassPathBeanDefinitionScanner.java&#10;ComponentScanBeanDefinitionParser&#9;FILE&#9;jar://D:/repository/org/springframework/spring-context/5.1.0.RELEASE/spring-context-5.1.0.RELEASE-sources.jar!/org/springframework/context/annotation/ComponentScanBeanDefinitionParser.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1568771789326" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1568771948969" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -702,7 +711,7 @@
       <workItem from="1568479856232" duration="20637000" />
       <workItem from="1568596490348" duration="24864000" />
       <workItem from="1568632291599" duration="612000" />
-      <workItem from="1568770114428" duration="1693000" />
+      <workItem from="1568770114428" duration="1828000" />
     </task>
     <servers />
   </component>
@@ -739,13 +748,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55450000" />
+    <option name="totallyTimeSpent" value="55585000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12953092" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12953092" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -755,7 +764,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.19723183" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49960968" visible="true" weight="0.30184582" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49960968" visible="true" weight="0.30184582" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -1079,13 +1088,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.0.RELEASE/spring-context-5.1.0.RELEASE-sources.jar!/org/springframework/context/support/PostProcessorRegistrationDelegate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3192">
@@ -1197,6 +1199,13 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
         </state>
       </provider>
     </entry>
