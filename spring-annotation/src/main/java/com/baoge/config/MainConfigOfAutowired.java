@@ -57,7 +57,7 @@ import org.springframework.context.annotation.Primary;
  */
 
 @Configuration
-@ComponentScan({"com.baoge.controller", "com.baoge.dao", "com.baoge.service",
+@ComponentScan({"com.baoge.DI_simaple.controller", "com.baoge.DI_simaple.dao", "com.baoge.DI_simaple.service",
     "com.baoge.bean"})
 public class MainConfigOfAutowired {
 

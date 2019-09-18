@@ -1,4 +1,4 @@
-package com.baoge.DI;
+package com.baoge.DI_simaple.DI;
 
 import java.lang.reflect.Field;
 

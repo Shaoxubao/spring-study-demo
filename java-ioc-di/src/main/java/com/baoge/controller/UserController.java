@@ -1,6 +1,6 @@
 package com.baoge.controller;
 
-import com.baoge.DI.Inject;
+import com.baoge.DI_simaple.DI.Inject;
 import com.baoge.service.UserService;
 
 /**
