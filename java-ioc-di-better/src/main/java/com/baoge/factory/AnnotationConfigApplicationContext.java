@@ -96,7 +96,7 @@ public class AnnotationConfigApplicationContext {
      * 那么首先从根据属性名从工厂中获取对象，或者根据对象类型获取对象。
      * 最后用该对象对属性进行注入。
      */
-    private void dependencyInjection(){
+    private void dependencyInjection() {
         // 获取容器中所有的类定义对象
         Collection<Class<?>> classes = beanDefinitionFactory.values();
         // 遍历每一个类对象
@@ -159,7 +159,7 @@ public class AnnotationConfigApplicationContext {
     /**
      * 根据传入的bean的id值获取容器中的对象，类型为Object
      */
-    public Object getBean(String beanId) {
+    public Object doGetBean(String beanId) {
         // 根据传入beanId获取类对象
         Class<?> cls = beanDefinitionFactory.get(beanId);
         // 根据类对象获取其定义的注解
@@ -172,8 +172,8 @@ public class AnnotationConfigApplicationContext {
                 // 判断容器中是否已有该对象的实例,如果没有,创建一个实例对象放到容器中
                 if(singletonBeanFactory.get(beanId)==null) {
                     Object instance = cls.newInstance();
-                    setFieldValues(cls,instance);
-                    singletonBeanFactory.put(beanId,instance);
+                    setFieldValues(cls, instance);
+                    singletonBeanFactory.put(beanId, instance);
                 }
                 // 根据beanId获取对象并返回
                 return singletonBeanFactory.get(beanId);
@@ -181,7 +181,7 @@ public class AnnotationConfigApplicationContext {
             // 如果scope等于prototype,则创建并返回多例对象
             if("prototype".equals(scope)) {
                 Object instance = cls.newInstance();
-                setFieldValues(cls,instance);
+                setFieldValues(cls, instance);
                 return instance;
             }
             // 目前仅支持单例和多例两种创建对象的方式
@@ -197,8 +197,8 @@ public class AnnotationConfigApplicationContext {
      * 此为重载方法，根据传入的class对象在内部进行强转，
      * 返回传入的class对象的类型
      */
-    public <T>T getBean(String beanId, Class<T> c){
-        return (T)getBean(beanId);
+    public <T>T getBean(String beanId, Class<T> c) {
+        return (T)doGetBean(beanId);
     }
 
     /**
@@ -221,17 +221,17 @@ public class AnnotationConfigApplicationContext {
                 // 获取属性所定义的类型
                 String type = field.getType().getName();
                 // 将属性名改为以大写字母开头，如：id改为ID，name改为Name
-                fieldName = String.valueOf(fieldName.charAt(0)).toUpperCase()+fieldName.substring(1);
+                fieldName = String.valueOf(fieldName.charAt(0)).toUpperCase() + fieldName.substring(1);
                 // set方法名称，如：setId,setName...
                 String setterName = "set" + fieldName;
                 try {
                     // 根据方法名称和参数类型获取对应的set方法对象
                     Method method = cls.getDeclaredMethod(setterName, field.getType());
                     // 判断属性类型，如类型不一致，则转换类型后调用set方法为属性赋值
-                    if("java.lang.Integer".equals(type) || "int".equals(type)){
+                    if("java.lang.Integer".equals(type) || "int".equals(type)) {
                         int intValue = Integer.valueOf(value);
                         method.invoke(obj, intValue);
-                    } else if("java.lang.String".equals(type)){
+                    } else if("java.lang.String".equals(type)) {
                         method.invoke(obj, value);
                     }
                     // 作为测试，仅判断Integer和String类型，其它类型同理
