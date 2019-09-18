@@ -28,4 +28,8 @@ public class InterfaceC {
         return interfaceD.hello();
     }
 
+    public String hello() {
+        return "hello InterfaceD";
+    }
+
 }

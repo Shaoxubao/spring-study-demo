@@ -3,6 +3,7 @@ package com.baoge;
 import com.baoge.constructorinject.InterfaceA;
 import com.baoge.constructorinject.config.MainConfig;
 import com.baoge.setterinject.InterfaceC;
+import com.baoge.setterinject.InterfaceD;
 import com.baoge.setterinject.config.MyConfig;
 import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -41,8 +42,10 @@ public class DependInjectTest /** extends SpringTestBase */ {
         AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(MyConfig.class);
 
         InterfaceC c = (InterfaceC) applicationContext.getBean("interfaceC");
-
         System.out.println(c.callInterfaceD());
+
+        InterfaceD d = (InterfaceD) applicationContext.getBean("interfaceD");
+        System.out.println(d.callInterfaceC());
     }
 
 }

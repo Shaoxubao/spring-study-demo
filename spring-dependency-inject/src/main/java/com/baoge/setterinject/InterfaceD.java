@@ -24,8 +24,12 @@ public class InterfaceD {
         System.out.println("InterfaceD setter 方法调用...");
     }
 
+    public String callInterfaceC() {
+        return interfaceC.hello();
+    }
+
     public String hello() {
-        return "hello world";
+        return "hello InterfaceC";
     }
 
 }
