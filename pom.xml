@@ -12,6 +12,7 @@
         <module>spring-annotation</module>
         <module>spring-dependency-inject</module>
         <module>java-ioc-di</module>
+        <module>java-ioc-di-better</module>
     </modules>
 
     <properties>
