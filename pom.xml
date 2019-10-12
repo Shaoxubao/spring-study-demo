@@ -13,6 +13,7 @@
         <module>spring-dependency-inject</module>
         <module>java-ioc-di</module>
         <module>java-ioc-di-better</module>
+        <module>spring-aop</module>
     </modules>
 
     <properties>
