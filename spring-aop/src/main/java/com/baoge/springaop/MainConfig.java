@@ -15,7 +15,7 @@ public class MainConfig {
 
     // 将业务逻辑组件和切面类都加入到容器中；告诉Spring哪个是切面类（@Aspect）需要交给spring管理
     @Bean
-    public Machine machine(){
+    public Machine machine() {
         return new Machine();
     }
 
