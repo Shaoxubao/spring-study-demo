@@ -2,7 +2,7 @@ package com.baoge;
 
 import com.baoge.bean.*;
 import com.baoge.config.*;
-import com.baoge.service.BookServiceImpl;
+import com.baoge.DI_simaple.service.BookServiceImpl;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;

@@ -2,7 +2,7 @@ package com.baoge.config;
 
 import com.baoge.bean.Car;
 import com.baoge.bean.Color;
-import com.baoge.dao.BookDao;
+import com.baoge.DI_simaple.dao.BookDao;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;

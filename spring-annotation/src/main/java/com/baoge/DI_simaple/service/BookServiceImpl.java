@@ -1,6 +1,6 @@
-package com.baoge.service;
+package com.baoge.DI_simaple.service;
 
-import com.baoge.dao.BookDao;
+import com.baoge.DI_simaple.dao.BookDao;
 import org.springframework.stereotype.Service;
 
 import javax.inject.Inject;

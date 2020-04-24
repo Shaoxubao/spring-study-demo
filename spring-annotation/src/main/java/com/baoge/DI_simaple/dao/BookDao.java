@@ -1,4 +1,4 @@
-package com.baoge.dao;
+package com.baoge.DI_simaple.dao;
 
 import org.springframework.stereotype.Repository;
 

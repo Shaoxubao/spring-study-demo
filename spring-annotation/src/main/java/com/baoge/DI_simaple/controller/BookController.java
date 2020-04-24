@@ -1,6 +1,6 @@
-package com.baoge.controller;
+package com.baoge.DI_simaple.controller;
 
-import com.baoge.service.BookServiceImpl;
+import com.baoge.DI_simaple.service.BookServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
