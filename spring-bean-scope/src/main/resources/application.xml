@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 可以通过scope属性来指定bean的作用域。
+        singleton：默认值，当IOC容器一创建就会创建bean的实例，而且是单例的
+        prototype：原型的，当IOC容器创建时不会实例化该bean，每次调用getBean()方法时再实例化该bean，而且每调用一次都会重新实例化
+        request：每次http请求都会创建一个新的bean，该作用域仅适用于WebApplicationContext环境
+        session：同一个http session共享一个bean，不同的http session使用不同的bean。该作用域仅适用于WebApplicationContext环境
+     -->
+    <bean id="book" class="com.baoge.Book" scope="prototype">
+        <property name="id" value="1"/>
+        <property name="title" value="红高粱"/>
+        <property name="author" value="莫言"/>
+        <property name="price" value="60"/>
+    </bean>
+
+</beans>

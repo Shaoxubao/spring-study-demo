@@ -15,6 +15,7 @@
         <module>java-ioc-di-better</module>
         <module>spring-aop</module>
         <module>spring-boot</module>
+        <module>spring-bean-scope</module>
     </modules>
 
     <properties>
