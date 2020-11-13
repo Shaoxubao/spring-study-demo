@@ -16,6 +16,7 @@
         <module>spring-aop</module>
         <module>spring-boot</module>
         <module>spring-bean-scope</module>
+        <module>spring-event</module>
     </modules>
 
     <properties>
