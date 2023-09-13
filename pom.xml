@@ -17,12 +17,14 @@
         <module>spring-boot</module>
         <module>spring-bean-scope</module>
         <module>spring-event</module>
+        <module>spring-lifecycle</module>
     </modules>
 
     <properties>
         <spring.version>5.1.0.RELEASE</spring.version>
         <junit.version>4.12</junit.version>
         <mysql.version>5.1.44</mysql.version>
+        <spring.boot.version>2.7.10</spring.boot.version>
     </properties>
 
 
