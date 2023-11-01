@@ -10,6 +10,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>spring-boot</artifactId>
+    <packaging>pom</packaging>
 
+    <modules>
+        <module>multi-datasource-annotation</module>
+        <module>multi-datasource-config</module>
+    </modules>
 
 </project>

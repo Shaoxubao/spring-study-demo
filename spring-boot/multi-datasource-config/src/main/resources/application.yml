@@ -1,0 +1,25 @@
+server:
+  port: 9661
+
+spring:
+  datasource:
+    user:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      username: root
+      password: 123456
+      jdbc-url: jdbc:mysql://127.0.0.1:3306/babytun?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC&useSSL=false
+    order:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      username: root
+      password: 123456
+      jdbc-url: jdbc:mysql://127.0.0.1:3306/cloud_study?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC&useSSL=false
+
+mybatis-plus:
+  #  mapper-locations: classpath:mapper/*.xml # xml文件路径
+  configuration:
+    map-underscore-to-camel-case: true  # 驼峰转换
+    cache-enabled: false  # 是否开启缓存
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl # 打印sql
+#  global-config: # 全局配置
+#    db-column-underline: true  # 数据库字段驼峰下划线转换
+#    id-type: 0 # id自增类型(数据库id自增)
