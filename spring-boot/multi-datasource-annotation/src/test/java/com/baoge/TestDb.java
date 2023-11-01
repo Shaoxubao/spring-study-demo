@@ -26,7 +26,7 @@ public class TestDb {
     @Test
     public void test() {
         User user = new User();
-        user.setUsername("test6");
+        user.setUsername("test7");
         testDbMapper.insert(user);
         testDb2Mapper.insert(user);
     }
@@ -34,7 +34,7 @@ public class TestDb {
     @Test
     public void test2() {
         User user = new User();
-        user.setUsername("test6");
+        user.setUsername("test7");
         // 切换指定数据源
         DynamicDataSourceContextHolder.push("slave_1");
         testDbMapper.insert(user);
