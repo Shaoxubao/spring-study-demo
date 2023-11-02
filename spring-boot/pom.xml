@@ -15,6 +15,7 @@
     <modules>
         <module>multi-datasource-annotation</module>
         <module>multi-datasource-config</module>
+        <module>nacos-config</module>
     </modules>
 
 </project>

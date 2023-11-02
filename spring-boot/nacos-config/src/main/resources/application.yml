@@ -1,0 +1,7 @@
+server:
+    port: 8081 # 服务端口
+spring:
+    application:
+        name: nacos-demo # 服务名称
+    profiles:
+        active: dev
