@@ -16,6 +16,7 @@
         <module>multi-datasource-annotation</module>
         <module>multi-datasource-config</module>
         <module>nacos-config</module>
+        <module>spring-boot-logback</module>
     </modules>
 
 </project>

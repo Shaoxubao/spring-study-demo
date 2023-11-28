@@ -1,0 +1,6 @@
+server:
+    port: 8082 # 服务端口
+spring:
+    application:
+        name: logback-demo # 服务名称
+msg: logback

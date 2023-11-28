@@ -1,0 +1,15 @@
+2023-11-28 17:36:22.163 [main] INFO  com.baoge.LogbackTestApplication - Starting LogbackTestApplication using Java 1.8.0_152 on MS-LZDEZGSDDKCD with PID 9000 (F:\workspace\spring-study-demo\spring-boot\spring-boot-logback\target\classes started by 豹哥 in F:\workspace\spring-study-demo)
+2023-11-28 17:36:22.163 [main] INFO  com.baoge.LogbackTestApplication - No active profile set, falling back to 1 default profile: "default"
+2023-11-28 17:36:23.029 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+2023-11-28 17:36:23.029 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2023-11-28 17:36:23.029 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-11-28 17:36:23.029 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-11-28 17:36:23.161 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-11-28 17:36:23.161 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 960 ms
+2023-11-28 17:36:23.414 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2023-11-28 17:36:23.430 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8082 (http) with context path ''
+2023-11-28 17:36:23.446 [main] INFO  com.baoge.LogbackTestApplication - Started LogbackTestApplication in 1.731 seconds (JVM running for 3.168)
+2023-11-28 17:36:44.978 [http-nio-8082-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-28 17:36:44.979 [http-nio-8082-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-11-28 17:36:44.980 [http-nio-8082-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-11-28 17:36:44.999 [http-nio-8082-exec-2] INFO  com.baoge.controller.TestController - 记录日志
