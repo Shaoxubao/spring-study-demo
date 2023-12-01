@@ -18,6 +18,7 @@
         <module>spring-bean-scope</module>
         <module>spring-event</module>
         <module>spring-lifecycle</module>
+        <module>spring-boot/spring-security-demo</module>
     </modules>
 
     <properties>

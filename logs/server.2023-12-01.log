@@ -1,0 +1,11 @@
+2023-12-01 16:49:23.802 [main] INFO  com.baoge.LogbackTestApplication - Starting LogbackTestApplication using Java 1.8.0_152 on MS-LZDEZGSDDKCD with PID 16828 (F:\workspace\spring-study-demo\spring-boot\spring-boot-logback\target\classes started by 豹哥 in F:\workspace\spring-study-demo)
+2023-12-01 16:49:23.804 [main] INFO  com.baoge.LogbackTestApplication - No active profile set, falling back to 1 default profile: "default"
+2023-12-01 16:49:24.644 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+2023-12-01 16:49:24.654 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2023-12-01 16:49:24.655 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-12-01 16:49:24.655 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-12-01 16:49:24.775 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-12-01 16:49:24.775 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 917 ms
+2023-12-01 16:49:25.070 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2023-12-01 16:49:25.085 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8082 (http) with context path ''
+2023-12-01 16:49:25.093 [main] INFO  com.baoge.LogbackTestApplication - Started LogbackTestApplication in 1.805 seconds (JVM running for 3.128)

@@ -17,6 +17,7 @@
         <module>multi-datasource-config</module>
         <module>nacos-config</module>
         <module>spring-boot-logback</module>
+        <module>spring-security-demo</module>
     </modules>
 
 </project>
