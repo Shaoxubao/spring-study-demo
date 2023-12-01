@@ -31,7 +31,15 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         return NoOpPasswordEncoder.getInstance();
     }
 
-    // 授权规则配置
+    /**
+     * 授权规则配置:
+     * SpringSecurity根据我们在WebSecurityConfig中的配置会对除了“/login”之外的资源进行拦截做登录检查，
+     * 如果没有登录会跳转到默认的登录页面“/login” 做登录
+     * 输入用户名和密码后点击登录，SpringSecurity的拦截器会拦截到登录请求，获取到用户名和密码封装成认证对象(Token对象)，
+     * 底层会调用InMemoryUserDetailsService通过用户名获取用户的认证信息(用户名，密码，权限等，这些信息通常是在数据库存储的)
+     * 然后执行认证工作：Security把登录请求传入的密码和InMemoryUserDetailsService中加载的用户的密码进行匹配(通过PasswordEncoder)，
+     * 匹配成功跳转成功地址，认证失败就返回错误
+     */
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()                                     // 授权配置
