@@ -18,6 +18,7 @@
         <module>nacos-config</module>
         <module>spring-boot-logback</module>
         <module>spring-security-demo</module>
+        <module>RestTemplateDemo</module>
     </modules>
 
 </project>
