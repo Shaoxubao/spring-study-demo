@@ -19,6 +19,7 @@
         <module>spring-boot-logback</module>
         <module>spring-security-demo</module>
         <module>RestTemplateDemo</module>
+        <module>mybatis-plus</module>
     </modules>
 
 </project>

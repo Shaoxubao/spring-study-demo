@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/babytun
+    username: root
+    password: 123456
+
+mybatis-plus:
+  type-aliases-package: com.baoge.entity
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
+logging:
+  level:
+    com.javastack.springboot.mybatisplus.mapper: debug
