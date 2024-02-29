@@ -20,6 +20,8 @@
         <module>spring-security-demo</module>
         <module>RestTemplateDemo</module>
         <module>mybatis-plus</module>
+        <module>spring-boot-auth</module>
+        <module>spring-boot-docker</module>
     </modules>
 
 </project>

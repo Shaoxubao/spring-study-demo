@@ -1,0 +1,6 @@
+2024-02-29 15:28:00.122 DEBUG --- [restartedMain] org.apache.ibatis.logging.LogFactory Line:135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2024-02-29 15:28:00.163 DEBUG --- [restartedMain] org.apache.ibatis.io.VFS Line:84  - Using VFS adapter org.mybatis.spring.boot.autoconfigure.SpringBootVFS
+2024-02-29 15:28:00.164 DEBUG --- [restartedMain] org.apache.ibatis.io.ResolverUtil Line:256 - Checking to see if class com.baoge.bean.User matches criteria [is assignable to Object]
+2024-02-29 15:28:20.085 DEBUG --- [http-nio-6001-exec-3] com.baoge.mapper.UserMapper.findUserByName Line:159 - ==>  Preparing: select * from t_user where username like CONCAT('%', ?, '%') 
+2024-02-29 15:28:20.107 DEBUG --- [http-nio-6001-exec-3] com.baoge.mapper.UserMapper.findUserByName Line:159 - ==> Parameters: zk2(String)
+2024-02-29 15:28:20.130 DEBUG --- [http-nio-6001-exec-3] com.baoge.mapper.UserMapper.findUserByName Line:159 - <==      Total: 1

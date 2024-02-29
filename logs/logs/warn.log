@@ -1,0 +1,1 @@
+2024-02-29 15:27:58.629 WARN  --- [restartedMain] org.mybatis.spring.mapper.ClassPathMapperScanner Line:166 - No MyBatis mapper was found in '[com.baoge]' package. Please check your configuration.

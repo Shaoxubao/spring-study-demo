@@ -1,0 +1,11 @@
+2024-02-29 15:27:57.754 INFO  --- [restartedMain] com.baoge.DockerBootApplication Line:55  - Starting DockerBootApplication using Java 1.8.0_152 on MS-LZDEZGSDDKCD with PID 16388 (F:\workspace\spring-study-demo\spring-boot\spring-boot-docker\target\classes started by 豹哥 in F:\workspace\spring-study-demo)
+2024-02-29 15:27:57.757 INFO  --- [restartedMain] com.baoge.DockerBootApplication Line:634 - No active profile set, falling back to 1 default profile: "default"
+2024-02-29 15:27:59.667 INFO  --- [restartedMain] org.apache.coyote.http11.Http11NioProtocol Line:173 - Initializing ProtocolHandler ["http-nio-6001"]
+2024-02-29 15:27:59.667 INFO  --- [restartedMain] org.apache.catalina.core.StandardService Line:173 - Starting service [Tomcat]
+2024-02-29 15:27:59.668 INFO  --- [restartedMain] org.apache.catalina.core.StandardEngine Line:173 - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2024-02-29 15:27:59.754 INFO  --- [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:173 - Initializing Spring embedded WebApplicationContext
+2024-02-29 15:27:59.831 INFO  --- [restartedMain] com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure Line:56  - Init DruidDataSource
+2024-02-29 15:27:59.986 INFO  --- [restartedMain] com.alibaba.druid.pool.DruidDataSource Line:1002 - {dataSource-1} inited
+2024-02-29 15:28:02.190 INFO  --- [restartedMain] org.apache.coyote.http11.Http11NioProtocol Line:173 - Starting ProtocolHandler ["http-nio-6001"]
+2024-02-29 15:28:02.225 INFO  --- [restartedMain] com.baoge.DockerBootApplication Line:61  - Started DockerBootApplication in 4.95 seconds (JVM running for 6.798)
+2024-02-29 15:28:02.853 INFO  --- [RMI TCP Connection(2)-192.168.170.1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'

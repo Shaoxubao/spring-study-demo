@@ -1,0 +1,5 @@
+server:
+    port: 9111 # 服务端口
+spring:
+    application:
+        name: auth # 服务名称
