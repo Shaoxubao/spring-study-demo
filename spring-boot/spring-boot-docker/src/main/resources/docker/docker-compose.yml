@@ -1,0 +1,49 @@
+version: "3"
+
+services:
+  microService:
+    image: xubao_springboot_docker:1.1
+    container_name: springboot_docker1.1
+    ports:
+      - "6002:6001"
+    volumes:
+      - /app/microService:/data
+    networks:
+      - my_net
+    depends_on:
+      - redis
+      - mysql
+
+  redis:
+    image: redis
+    container_name: redis6
+    ports:
+      - "6399:6379"
+    volumes:
+      - /app/redis/redis.conf:/etc/redis/redis.conf
+      - /app/redis/data:/data
+    networks:
+      - my_net
+    command: redis-server /etc/redis/redis.conf
+
+  mysql:
+    image: mysql
+    container_name: mysql5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: '123456'
+      MYSQL_ALLOW_EMPTY_PASSWORD: 'no'
+    ports:
+      - "3307:3306"
+    volumes:
+      - /app/mysql/db:/var/lib/mysql
+      - /app/mysql/conf:/etc/mysql/conf.d
+      - /app/mysql/log:/var/log/mysql #日志文件挂载
+      - /app/mysql/init:/docker-entrypoint-initdb.d
+    networks:
+      - my_net
+    command:
+      --default-authentication-plugin=mysql_native_password
+      --character-set-server=utf8mb4
+      --collation-server=utf8mb4_general_ci
+networks:
+  my_net:
