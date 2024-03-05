@@ -23,6 +23,7 @@
         <module>spring-boot-auth</module>
         <module>spring-boot-docker</module>
         <module>spring-boot-nacos</module>
+        <module>spring-boot-kafka</module>
     </modules>
 
 </project>
