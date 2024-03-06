@@ -1,0 +1,18 @@
+server:
+  port: 8020
+
+spring:
+  application:
+    name: huawei-consumer
+  cloud:
+    servicecomb:
+      discovery:
+        enabled: true
+        watch: false
+        address: http://127.0.0.1:30100
+        appName: hauweicloud-application
+        serviceName: ${spring.application.name}
+        version: 0.0.1
+      config:
+        serverType: kie
+        serverAddr: http://127.0.0.1:30110
