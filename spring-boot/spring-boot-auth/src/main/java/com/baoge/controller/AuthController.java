@@ -26,7 +26,8 @@ public class AuthController {
     }
 
     @RequestMapping("/test")
-    public void test() {
+    public String test() {
         System.out.println("test");
+        return "hello";
     }
 }
