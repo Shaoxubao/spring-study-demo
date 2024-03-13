@@ -5,9 +5,9 @@ import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
-@TableName("cons_curve10")
+@TableName("cons_curve")
 @Data
-public class ConsCurve10 {
+public class ConsCurve {
 
     @TableField(insertStrategy = FieldStrategy.NOT_NULL)
     private String consName;

@@ -19,6 +19,9 @@
 
         <mybatis-plus-boot-starter.version>3.4.3</mybatis-plus-boot-starter.version>
         <mybatis-spring.version>3.0.3</mybatis-spring.version>
+        <poi.version>3.16</poi.version>
+        <junit.version>4.11</junit.version>
+        <xmlbeans.version>2.6.0</xmlbeans.version>
     </properties>
 
     <dependencies>
@@ -68,6 +71,47 @@
             <version>8.0.26</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>${poi.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>${poi.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml-schemas</artifactId>
+            <version>${poi.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.xmlbeans</groupId>
+            <artifactId>xmlbeans</artifactId>
+            <version>${xmlbeans.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-collections4</artifactId>
+            <version>4.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.4</version>
+            <scope>compile</scope>
+        </dependency>
 
     </dependencies>
 

@@ -1,6 +1,6 @@
 package com.baoge.service;
 
-import com.baoge.entity.ConsCurve10;
+import com.baoge.entity.ConsCurve;
 import com.baoge.entity.UserDO;
 import com.baoge.mapper.ConsCurve10Mapper;
 import com.baoge.mapper.UserMapper;
@@ -38,7 +38,7 @@ public class UserServiceImpl
     }
 
     @Override
-    public ConsCurve10 find(String consNo, String date) {
+    public ConsCurve find(String consNo, String date) {
         return consCurve10Mapper.find(consNo, date);
     }
 

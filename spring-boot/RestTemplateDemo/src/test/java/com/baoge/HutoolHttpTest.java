@@ -26,6 +26,7 @@ public class HutoolHttpTest {
     }
 
     /**
+     * 参考ServiceCenterClient类实现
      * 查询所有微服务
      * http://127.0.0.1:30100/v4/default/registry/microservices
      */
