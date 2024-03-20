@@ -14,7 +14,7 @@ import org.junit.jupiter.api.Test;
 @Slf4j
 public class HutoolHttpTest {
 
-    public static final String CSE_URL = "http://127.0.0.1:30100/v4/default";
+    public static final String CSE_URL = "http://192.168.43.146:30100/v4/default";
 
     @Test
     public void testHttp() {

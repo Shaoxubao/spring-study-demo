@@ -9,13 +9,13 @@ spring:
       discovery:
         enabled: true
         watch: false
-        address: http://127.0.0.1:30100
+        address: http://192.168.43.146:30100
         appName: hauweicloud-application
         serviceName: ${spring.application.name}
         version: 0.0.1
       config:
         serverType: kie
-        serverAddr: http://127.0.0.1:30110
+        serverAddr: http://192.168.43.146:30110
 
 
     gateway:

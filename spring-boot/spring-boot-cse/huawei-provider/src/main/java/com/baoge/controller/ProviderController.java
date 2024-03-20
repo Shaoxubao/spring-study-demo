@@ -12,4 +12,9 @@ public class ProviderController {
     return "Hello " + name + ", This is Spring cloud Huawei + CSE!";
   }
 
+  @GetMapping("/test")
+  public String test() {
+    return "Hello, This is Spring cloud Huawei + CSE!";
+  }
+
 }
