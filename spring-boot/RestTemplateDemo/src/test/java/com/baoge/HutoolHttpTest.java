@@ -1,8 +1,11 @@
 package com.baoge;
 
+import cn.hutool.http.Header;
 import cn.hutool.http.HttpRequest;
 import cn.hutool.http.HttpResponse;
+import cn.hutool.http.HttpUtil;
 import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
 import com.baoge.bean.Microservice;
 import com.baoge.bean.MicroserviceInstancesResponse;
 import com.baoge.bean.MicroservicesResponse;
@@ -15,6 +18,8 @@ import org.junit.jupiter.api.Test;
 public class HutoolHttpTest {
 
     public static final String CSE_URL = "http://192.168.43.146:30100/v4/default";
+
+    public static final String CSE_TOKEN_URL = "http://192.168.43.146:30100";
 
     @Test
     public void testHttp() {
@@ -63,5 +68,32 @@ public class HutoolHttpTest {
             MicroserviceInstancesResponse instancesResponse = HttpUtils.deserialize(response.body(), MicroserviceInstancesResponse.class);
             System.out.println(instancesResponse);
         }
+    }
+
+    @Test
+    public void token() {
+        JSONObject jsonObject = new JSONObject();
+        jsonObject.put("name", "xubao");
+        jsonObject.put("password", "123456");
+        HttpResponse response = HttpRequest.post(CSE_TOKEN_URL + "/v4/token")
+                .header(Header.CONTENT_TYPE, "application/json")
+                .body(jsonObject.toJSONString())
+                .timeout(10000) // 超时，毫秒
+                .execute();
+        System.out.println(response.body());
+    }
+
+    @Test
+    public void token2() {
+        JSONObject jsonObject = new JSONObject();
+        jsonObject.put("name", "xubao");
+        jsonObject.put("password", "123456");
+        String url = CSE_TOKEN_URL + "/v4/token";
+        System.out.println(HttpUtil
+                .createPost(url)
+                .body(jsonObject.toJSONString())
+                .execute()
+                .body() );
+
     }
 }
