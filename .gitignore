@@ -10,6 +10,8 @@
 */*.iml
 */target
 */*/target
+*/*/*/target
+*/*/*/*/target
 */dubbo-registry
 */*/dubbo-registry
 *mvnw*
