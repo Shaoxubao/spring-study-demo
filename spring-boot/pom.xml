@@ -25,6 +25,7 @@
         <module>spring-boot-nacos</module>
         <module>spring-boot-kafka</module>
         <module>spring-boot-cse</module>
+        <module>spring-boot-redis-lua</module>
     </modules>
 
 </project>
