@@ -26,6 +26,7 @@
         <module>spring-boot-kafka</module>
         <module>spring-boot-cse</module>
         <module>spring-boot-redis-lua</module>
+        <module>spring-boot-websocket</module>
     </modules>
 
 </project>

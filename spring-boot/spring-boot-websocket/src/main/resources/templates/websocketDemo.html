@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>666666</title>
+</head>
+<body>
+传递来的数据值cid:
+<input type="text" th:value="${cid}" id="cid"/>
+<p>【toUserId】：
+<div><input id="toUserId" name="toUserId" type="text" value="user-1"></div>
+<p>【toUserId】：
+<div><input id="contentText" name="contentText" type="text" value="hello websocket"></div>
+<p>【操作】：
+<div>
+  <button type="button" onclick="sendMessage()">发送消息</button>
+</div>
+<div class="row">
+  <div id="output" style="border:1px solid #ccc;height:365px;overflow: auto;margin: 20px 0;"></div>
+</div>
+</body>
+
+<script type="text/javascript">
+  var socket;
+  if (typeof (WebSocket) == "undefined") {
+    console.log("您的浏览器不支持WebSocket");
+  } else {
+    console.log("您的浏览器支持WebSocket");
+    //实现化WebSocket对象，指定要连接的服务器地址与端口  建立连接
+
+    var cid = document.getElementById("cid").value;
+    console.log("cid-->" + cid);
+    var reqUrl = "http://localhost:8081/websocket/" + cid;
+    socket = new WebSocket(reqUrl.replace("http", "ws"));
+    //打开事件
+    socket.onopen = function () {
+      console.log("Socket 已打开");
+      //socket.send("这是来自客户端的消息" + location.href + new Date());
+    };
+    //获得消息事件
+    socket.onmessage = function (msg) {
+      console.log("onmessage--" + msg.data);
+      //发现消息进入    开始处理前端触发逻辑
+      writeToScreen('<span style="color:blue">服务端回应&nbsp;' + formatDate(new Date()) + '</span><br/><span class="bubble">' +
+              msg.data + '</span>');
+    };
+    //关闭事件
+    socket.onclose = function () {
+      console.log("Socket已关闭");
+    };
+    //发生了错误事件
+    socket.onerror = function () {
+      alert("Socket发生了错误");
+      //此时可以尝试刷新页面
+    }
+    //离开页面时，关闭socket
+    //jquery1.8中已经被废弃，3.0中已经移除
+    // $(window).unload(function(){
+    //     socket.close();
+    //});
+  }
+
+  function sendMessage() {
+    if (typeof (WebSocket) == "undefined") {
+      console.log("您的浏览器不支持WebSocket");
+    } else {
+      // console.log("您的浏览器支持WebSocket");
+      var toUserId = document.getElementById('toUserId').value;
+      var contentText = document.getElementById('contentText').value;
+      var msg = '{"sid":"' + toUserId + '","message":"' + contentText + '"}';
+      console.log(msg);
+      socket.send(msg);
+    }
+  }
+
+  function writeToScreen(message) {
+    var div = "<div class='newmessage'>" + message + "</div>";
+    var d = $("#output");
+    var d = d[0];
+    var doScroll = d.scrollTop == d.scrollHeight - d.clientHeight;
+    $("#output").append(div);
+    if (doScroll) {
+      d.scrollTop = d.scrollHeight - d.clientHeight;
+    }
+  }
+
+  function formatDate(now) {
+    var year = now.getFullYear();
+    var month = now.getMonth() + 1;
+    var date = now.getDate();
+    var hour = now.getHours();
+    var minute = now.getMinutes();
+    var second = now.getSeconds();
+    return year + "-" + (month = month < 10 ? ("0" + month) : month) + "-" + (date = date < 10 ? ("0" + date) : date) +
+            " " + (hour = hour < 10 ? ("0" + hour) : hour) + ":" + (minute = minute < 10 ? ("0" + minute) : minute) + ":" + (
+                    second = second < 10 ? ("0" + second) : second);
+  }
+
+</script>
+</html>
+
