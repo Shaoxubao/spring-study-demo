@@ -27,6 +27,7 @@
         <module>spring-boot-cse</module>
         <module>spring-boot-redis-lua</module>
         <module>spring-boot-websocket</module>
+        <module>spring-boot-rocketmq</module>
     </modules>
 
 </project>
