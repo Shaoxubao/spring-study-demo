@@ -1,9 +1,9 @@
 server:
-  port: 8021
+  port: 8026
 # 应用名称 （nacos会将该名称当做服务名称）
 spring:
   application:
-    name: order-service
+    name: feign-service
   cloud:
     nacos:
       server-addr: 127.0.0.1:8848
