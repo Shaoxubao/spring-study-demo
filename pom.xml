@@ -19,6 +19,7 @@
         <module>spring-event</module>
         <module>spring-lifecycle</module>
         <module>spring-boot/spring-security-demo</module>
+        <module>java-mock-server</module>
     </modules>
 
     <properties>
