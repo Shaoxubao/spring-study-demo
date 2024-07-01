@@ -1,6 +1,7 @@
 package com.baoge.client;
 
 import com.alibaba.fastjson.JSONObject;
+import com.baoge.model.FeignResult;
 import feign.HeaderMap;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -20,4 +21,7 @@ public interface MyFeignClient {
 
     @PostMapping("/order/get3")
     String getOrderWithHeader(@RequestBody JSONObject json);
+
+    @PostMapping("/order/get4")
+    FeignResult getOrderWithMyReturn(@RequestBody JSONObject req);
 }

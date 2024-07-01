@@ -3,6 +3,7 @@ package com.baoge.controller;
 import com.alibaba.fastjson.JSONObject;
 import com.baoge.client.MyFeignClient;
 import com.baoge.client.MyFeignClient2;
+import com.baoge.model.FeignResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -27,6 +28,14 @@ public class FeignController {
         json.put("orderId", 123);
         String msg = feignClient.getOrderWithHeader(json);
         return "Hello " + msg;
+    }
+
+    @RequestMapping(value = "/getOrder4", method = RequestMethod.POST)
+    public String getOrder4(@RequestBody JSONObject req) {
+        JSONObject json = new JSONObject();
+        json.put("orderId", 123);
+        FeignResult result = feignClient.getOrderWithMyReturn(json);
+        return "Hello " + result;
     }
 
     /**

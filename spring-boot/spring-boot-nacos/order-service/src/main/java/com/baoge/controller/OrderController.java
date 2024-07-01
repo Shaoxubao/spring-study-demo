@@ -1,6 +1,7 @@
 package com.baoge.controller;
 
 import com.alibaba.fastjson.JSONObject;
+import com.baoge.model.FeignResult;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
@@ -28,6 +29,15 @@ public class OrderController {
         System.out.println("订单查询:" + json);
         System.out.println("header:" + token);
         return "订单:" + port;
+    }
+
+    @RequestMapping(value = "/get4", method = RequestMethod.POST)
+    public FeignResult get3(@RequestBody JSONObject json) {
+        System.out.println("订单查询:" + json);
+        FeignResult result = new FeignResult();
+        result.setId("1");
+        result.setStatus("200");
+        return result;
     }
 
 
