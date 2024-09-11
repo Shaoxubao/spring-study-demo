@@ -30,6 +30,8 @@
         <module>spring-boot-rocketmq</module>
         <module>spring-boot-oauth2</module>
         <module>mybatis_plus_generator</module>
+        <module>test</module>
+        <module>jvm-monitor</module>
     </modules>
 
 </project>
