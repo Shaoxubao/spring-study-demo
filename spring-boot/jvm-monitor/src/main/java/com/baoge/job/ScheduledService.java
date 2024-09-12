@@ -74,7 +74,7 @@ public class ScheduledService {
         // 磁盘总大小
         AppJvmBaseInfo baseInfo = appJvmBaseInfoService.getOne(new QueryWrapper<AppJvmBaseInfo>().eq("app_name", appName));
         if (baseInfo != null) {
-            baseInfo.setDiskSize(Integer.parseInt(diskInfo.getSize()));
+            baseInfo.setDiskSize(diskInfo.getSize());
             appJvmBaseInfoService.updateById(baseInfo);
         }
 

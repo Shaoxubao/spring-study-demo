@@ -40,7 +40,7 @@ public class AppJvmBaseInfo implements Serializable {
     /**
      * 磁盘总大小
      */
-    private Integer diskSize;
+    private String diskSize;
 
 
 }
