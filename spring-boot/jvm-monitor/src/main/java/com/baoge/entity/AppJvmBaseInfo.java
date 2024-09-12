@@ -37,5 +37,10 @@ public class AppJvmBaseInfo implements Serializable {
      */
     private Integer cpuCount;
 
+    /**
+     * 磁盘总大小
+     */
+    private Integer diskSize;
+
 
 }

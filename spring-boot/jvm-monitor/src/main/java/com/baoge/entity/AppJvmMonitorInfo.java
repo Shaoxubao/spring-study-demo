@@ -59,6 +59,26 @@ public class AppJvmMonitorInfo implements Serializable {
     private String useMemory;
 
     /**
+     * 内存使用率
+     */
+    private String userMemoryPercent;
+
+    /**
+     * 磁盘已使用大小
+     */
+    private String diskUsed;
+
+    /**
+     * 磁盘剩余可用大小
+     */
+    private String diskAvailable;
+
+    /**
+     * 磁盘使用率百分比
+     */
+    private String diskUsePercent;
+
+    /**
      * 创建时间
      */
     private Date createTime;
