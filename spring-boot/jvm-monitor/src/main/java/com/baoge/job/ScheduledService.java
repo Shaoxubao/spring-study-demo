@@ -45,7 +45,7 @@ public class ScheduledService {
        log.info("=====>>>>>fixedDelay{}",System.currentTimeMillis());
    }
 
-    @Scheduled(cron = "0/30 * * * * *")
+    @Scheduled(cron = "0 0/1 * * * *")
     public void jvmMonitor(){
         log.info("jvm monitor start-----------------------");
 
