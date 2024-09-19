@@ -38,6 +38,14 @@ public class FeignController {
         return "Hello " + result;
     }
 
+    @RequestMapping(value = "/getOrder5", method = RequestMethod.POST)
+    public String getOrder5(@RequestBody JSONObject req) {
+        JSONObject json = new JSONObject();
+        json.put("orderId", 123);
+        FeignResult result = feignClient.getOrderWithMyReturn2(json);
+        return "Hello " + result;
+    }
+
     /**
      * 启动order-service
      * 调用此mock方法，需先启动com.baoge.MockServer

@@ -37,18 +37,20 @@ public class FeignConfig {
                 template.header("accessCode", "205099"); // 网元编码
                 template.header("bizCode", bizCode); // 业务编码
 
-                // 业务请求参数
-                String reqBody = new String(template.body());
-                // 新body参数
-                JSONObject jsonBody = new JSONObject();
-                jsonBody.put("espFlowId", sessionId);
-                jsonBody.put("espRsvFieldl", "");
-                jsonBody.put("espRsvField2", "");
-                jsonBody.put("espRsvField3", "");
-                jsonBody.put("espTimestamp", System.currentTimeMillis());
-                jsonBody.put("espInformation", reqBody);
+                if (template.body() != null) {
+                    // 业务请求参数
+                    String reqBody = new String(template.body());
+                    // 新body参数
+                    JSONObject jsonBody = new JSONObject();
+                    jsonBody.put("espFlowId", sessionId);
+                    jsonBody.put("espRsvFieldl", "");
+                    jsonBody.put("espRsvField2", "");
+                    jsonBody.put("espRsvField3", "");
+                    jsonBody.put("espTimestamp", System.currentTimeMillis());
+                    jsonBody.put("espInformation", reqBody);
 
-                template.body(jsonBody.toString());
+                    template.body(jsonBody.toString());
+                }
             }
         };
     }

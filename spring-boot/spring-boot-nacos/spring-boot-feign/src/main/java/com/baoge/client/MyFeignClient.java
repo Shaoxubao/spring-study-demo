@@ -24,4 +24,7 @@ public interface MyFeignClient {
 
     @PostMapping("/order/get4")
     FeignResult getOrderWithMyReturn(@RequestBody JSONObject req);
+
+    @PostMapping("/order/get5")
+    FeignResult getOrderWithMyReturn2(JSONObject req);
 }

@@ -40,5 +40,14 @@ public class OrderController {
         return result;
     }
 
+    @RequestMapping(value = "/get5", method = RequestMethod.POST)
+    public FeignResult get5(@RequestBody JSONObject json) {
+        System.out.println("订单查询5:" + json);
+        FeignResult result = new FeignResult();
+        result.setId("1");
+        result.setStatus("200");
+        return result;
+    }
+
 
 }
