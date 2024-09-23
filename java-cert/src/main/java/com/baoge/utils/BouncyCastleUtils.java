@@ -116,6 +116,7 @@ public class BouncyCastleUtils {
         KeyPair keyPair = generator.generateKeyPair();
         return keyPair;
     }
+
     /**
      * 随机生成别名
      *
@@ -291,8 +292,6 @@ public class BouncyCastleUtils {
     }
 
 
-
-
     @SneakyThrows
     public static Map<String, String> saveKeyStore(KeyPair keyPair, BaseCertificateInfo info) {
         Map<String, String> result = new HashMap<>();
@@ -337,7 +336,6 @@ public class BouncyCastleUtils {
         System.out.println("存储keyPair到KeyStore Success");
         return result;
     }
-
 
 
     /**
@@ -518,7 +516,7 @@ public class BouncyCastleUtils {
             byte[] b = new byte[4];
             inStream.read(b);
             inStream.close();
-            if (Arrays.equals(b, new byte[] {0x2D, 0x2D, 0x2D, 0x2D})) {
+            if (Arrays.equals(b, new byte[]{0x2D, 0x2D, 0x2D, 0x2D})) {
                 return true;
             }
             return false;
@@ -531,9 +529,9 @@ public class BouncyCastleUtils {
     /**
      * 生成Certificate证书存储到本地
      *
-     * @param alias 密钥别名
+     * @param alias        密钥别名
      * @param keyStorePath 密钥文件
-     * @param parentCert 父级证书
+     * @param parentCert   父级证书
      * @return
      */
     @SneakyThrows
@@ -578,7 +576,7 @@ public class BouncyCastleUtils {
                     notBefore,
                     notAfter,
                     extensions);
-        }else{
+        } else {
             /**
              * 2.利用父证书签发当前正在创建的证书
              * 密钥使用父级节点密钥
@@ -611,7 +609,7 @@ public class BouncyCastleUtils {
 
 
     @SneakyThrows
-    public static Map<String, Object> createCert(String alias, String keyStorePath, X509Certificate parentCert,BaseCertificateInfo info) {
+    public static Map<String, Object> createCert(String alias, String keyStorePath, X509Certificate parentCert, BaseCertificateInfo info) {
         Map<String, Object> result = new HashMap<>();
         // X509格式证书
         X509Certificate cert = null;
@@ -652,7 +650,7 @@ public class BouncyCastleUtils {
                     notBefore,
                     notAfter,
                     extensions);
-        }else{
+        } else {
             /**
              * 2.利用父证书签发当前正在创建的证书
              * 密钥使用父级节点密钥
@@ -686,10 +684,10 @@ public class BouncyCastleUtils {
     /**
      * 签发Certificate证书存储到本地(签发证书签名请求)
      *
-     * @param alias 密钥别名
-     * @param keyStorePath 密钥文件
+     * @param alias          密钥别名
+     * @param keyStorePath   密钥文件
      * @param certIssuerPath Certificate证书文件
-     * @param csrIssuerFile CSR证书请求文件
+     * @param csrIssuerFile  CSR证书请求文件
      * @return
      */
     @SneakyThrows
@@ -704,7 +702,7 @@ public class BouncyCastleUtils {
         if (isPemFormat(csrIssuerFile)) {
             PEMParser parser = new PEMParser(new InputStreamReader(inStream));
             csr = (PKCS10CertificationRequest) parser.readObject();
-        }else{
+        } else {
             csr = new PKCS10CertificationRequest(IOUtils.toByteArray(inStream));
         }
         /*********************************读取Certificate文件*******************************/
@@ -727,10 +725,10 @@ public class BouncyCastleUtils {
             } finally {
                 parser.close();
             }
-        }else{
+        } else {
             inStream = new FileInputStream(certIssuerFile);
             CertificateFactory certFactory = CertificateFactory.getInstance(CERTFICATE_TYPE);
-            certIssuer =  (X509Certificate) certFactory.generateCertificate(inStream);
+            certIssuer = (X509Certificate) certFactory.generateCertificate(inStream);
         }
         // 获取父级主题
         X500Principal principal = certIssuer.getSubjectX500Principal();
