@@ -20,6 +20,7 @@
         <module>spring-lifecycle</module>
         <module>spring-boot/spring-security-demo</module>
         <module>java-mock-server</module>
+        <module>java-cert</module>
     </modules>
 
     <properties>
