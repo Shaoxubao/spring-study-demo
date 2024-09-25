@@ -32,6 +32,7 @@
         <module>mybatis_plus_generator</module>
         <module>test</module>
         <module>jvm-monitor</module>
+        <module>nacos-config2</module>
     </modules>
 
 </project>

@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: my-app
+nacos:
+  config:
+    server-addr: 127.0.0.1:8848
+    username: nacos
+    password: nacos
+    namespace: 6cae83d7-127e-4a5a-ace3-0fd2063369b9
+  discovery:
+    server-addr: 127.0.0.1:8848
+    username: nacos
+    password: nacos
+    namespace: 6cae83d7-127e-4a5a-ace3-0fd2063369b9
+    auto-register: true
