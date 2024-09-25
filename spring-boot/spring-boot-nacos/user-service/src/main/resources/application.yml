@@ -6,11 +6,11 @@ spring:
     name: user-service
   cloud:
     nacos:
-      server-addr: 192.168.43.91:49155
+      server-addr: 127.0.0.1:8848
       discovery:
         username: nacos
         password: nacos
-        # namespace: public  # 相同特征的服务进行归类分组管理
+        #namespace: 6cae83d7-127e-4a5a-ace3-0fd2063369b9  # 相同特征的服务进行归类分组管理
         # ephemeral: false  # 默认=true（临时实例）  当服务宕机 超过心跳 就会将实例剔除掉
         #永久实例   哪怕宕机了也不会删除实例  当服务宕机 永远不会剔除掉
         #group的相同特征的服务进行归类分组管理
