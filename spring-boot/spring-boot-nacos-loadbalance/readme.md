@@ -27,6 +27,12 @@
             OkToRetryOnAllOperations: true #对所有请求都进行重试
             MaxAutoRetriesNextServer: 2 #切换实例的重试次数
             MaxAutoRetries: 1 #对当前实例的重试次数
+    2.Spring Cloud OpenFeign 的核心工作原理经上文探究可以非常简单的总结为：
+    通过 @EnableFeignCleints 触发 Spring 应用程序对 classpath 中 @FeignClient 修饰类的扫描
+    解析到 @FeignClient 修饰类后， Feign 框架通过扩展 Spring Bean Deifinition 的注册逻辑，最终注册一个 FeignClientFacotoryBean 进入 Spring 容器
+    Spring 容器在初始化其他用到 @FeignClient 接口的类时， 获得的是 FeignClientFacotryBean 产生的一个代理对象 Proxy.
+    基于 java 原生的动态代理机制， 针对 Proxy 的调用， 都会被统一转发给 Feign 框架所定义的一个InvocationHandler，由该 Handler 完成后续的 HTTP 转换，发送，接收，翻译HTTP响应的工作。
+    
     二、使用注解方式：在消费者启动类代码中注入RestTemplate，@LoadBalanced的作用是开启负载均衡，默认是轮询机制。
     @SpringBootApplication
     @EnableDiscoveryClient
