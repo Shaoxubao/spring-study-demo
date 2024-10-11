@@ -34,6 +34,7 @@
         <module>jvm-monitor</module>
         <module>nacos-config2</module>
         <module>spring-boot-nacos-loadbalance</module>
+        <module>spring-boot-webservice</module>
     </modules>
 
 </project>

@@ -1,0 +1,5 @@
+server:
+    port: 19000 # 服务端口
+spring:
+    application:
+        name: webservice-server # 服务名称

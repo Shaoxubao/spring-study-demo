@@ -1,0 +1,5 @@
+server:
+    port: 19111 # 服务端口
+spring:
+    application:
+        name: webservice-client # 服务名称
