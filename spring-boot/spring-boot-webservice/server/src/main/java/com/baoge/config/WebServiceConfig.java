@@ -1,6 +1,7 @@
 package com.baoge.config;
 
 import com.baoge.service.ServerServiceDemo;
+import com.baoge.service.ServerServiceDemo2;
 import org.apache.cxf.Bus;
 import org.apache.cxf.bus.spring.SpringBus;
 import org.apache.cxf.jaxws.EndpointImpl;
@@ -22,6 +23,9 @@ public class WebServiceConfig {
  
     @Autowired
     private ServerServiceDemo serverServiceDemo;
+
+    @Autowired
+    private ServerServiceDemo2 serverServiceDemo2;
  
     /**
      * Apache CXF 核心架构是以BUS为核心，整合其他组件。
@@ -58,6 +62,13 @@ public class WebServiceConfig {
     public Endpoint endpoint() {
         EndpointImpl endpoint = new EndpointImpl(springBus(), serverServiceDemo);
         endpoint.publish("/ws/api");
+        return endpoint;
+    }
+
+    @Bean
+    public Endpoint endpoint2() {
+        EndpointImpl endpoint = new EndpointImpl(springBus(), serverServiceDemo2);
+        endpoint.publish("/ws/api2");
         return endpoint;
     }
 }
