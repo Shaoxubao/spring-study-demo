@@ -20,6 +20,7 @@
 </div>
 </body>
 
+<script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
 <script type="text/javascript">
   var socket;
   if (typeof (WebSocket) == "undefined") {
@@ -75,8 +76,8 @@
 
   function writeToScreen(message) {
     var div = "<div class='newmessage'>" + message + "</div>";
-    var d = $("#output");
-    var d = d[0];
+    var d1 = $("#output");
+    var d = d1[0];
     var doScroll = d.scrollTop == d.scrollHeight - d.clientHeight;
     $("#output").append(div);
     if (doScroll) {

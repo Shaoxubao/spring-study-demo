@@ -33,7 +33,15 @@ public class WebSocketServer {
     /**
      * 存放所有在线的客户端
      */
-    private static final Map<String, Session> onlineSessionClientMap = new ConcurrentHashMap<>();
+    private static Map<String, Session> onlineSessionClientMap = new ConcurrentHashMap<>();
+
+    public static Map<String, Session> getOnlineSessionClientMap() {
+        return onlineSessionClientMap;
+    }
+
+    public static void setOnlineSessionClientMap(Map<String, Session> onlineSessionClientMap) {
+        WebSocketServer.onlineSessionClientMap = onlineSessionClientMap;
+    }
 
     /**
      * 连接sid和连接会话
@@ -144,7 +152,7 @@ public class WebSocketServer {
      * @param toSid
      * @param message
      */
-    private void sendToOne(String toSid, String message) {
+    public void sendToOne(String toSid, String message) {
         // 通过sid查询map中是否存在
         Session toSession = onlineSessionClientMap.get(toSid);
         if (toSession == null) {

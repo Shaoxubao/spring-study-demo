@@ -39,3 +39,5 @@
     指定的窗口能够收到数据，其他窗口收不到数据。
     （3）群发送消息
     user-3群发送数据。在代码中定义群发的条件为：当不指定 toUserid时，则为群发。
+    
+    注意：html代码中需要引入jquery：<script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
