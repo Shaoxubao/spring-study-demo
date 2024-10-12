@@ -11,6 +11,9 @@ import org.springframework.stereotype.Component;
 import javax.websocket.Session;
 import java.util.Map;
 
+/**
+ * 实时推送给客户端消息
+ */
 @Component
 @EnableScheduling
 @Slf4j
