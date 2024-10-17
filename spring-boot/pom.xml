@@ -35,6 +35,7 @@
         <module>nacos-config2</module>
         <module>spring-boot-nacos-loadbalance</module>
         <module>spring-boot-webservice</module>
+        <module>shiro-jwt</module>
     </modules>
 
 </project>
