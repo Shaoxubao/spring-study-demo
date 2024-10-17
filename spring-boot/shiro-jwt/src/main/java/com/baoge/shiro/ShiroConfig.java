@@ -41,7 +41,7 @@ public class ShiroConfig {
         filterMap.put("jwt", new JwtFilter());
         shiroFilterFactoryBean.setFilters(filterMap);
 
-        // 配置系统受限资源
+        // 配置系统受限资源,配置不会被拦截的链接 顺序判断
         Map<String, String> map = new HashMap<String, String>();
         map.put("/index.jsp", "authc");
         map.put("/user/login", "anon");
