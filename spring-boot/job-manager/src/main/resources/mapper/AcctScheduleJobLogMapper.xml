@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baoge.mapper.AcctScheduleJobLogMapper">
+
+    <resultMap id="BaseResultMap" type="com.baoge.model.AcctScheduleJobLog">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="name" column="name" jdbcType="VARCHAR"/>
+            <result property="beanClass" column="bean_class" jdbcType="VARCHAR"/>
+            <result property="jobStart" column="job_start" jdbcType="TIMESTAMP"/>
+            <result property="jobEnd" column="job_end" jdbcType="TIMESTAMP"/>
+            <result property="exceptionInfo" column="exception_info" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,name,bean_class,
+        job_start,job_end,exception_info
+    </sql>
+
+    <insert id="insertAcctScheduleJobLog" parameterType="com.baoge.model.AcctScheduleJobLog">
+        INSERT INTO `acct_schedule_job_log` (
+             `name`, `bean_class`, `job_start`, `job_end`, `exception_info` )
+        VALUES
+            (
+              #{param.name},
+              #{param.beanClass},
+              #{param.jobStart},
+              #{param.jobEnd},
+              #{param.exceptionInfo}
+             )
+    </insert>
+
+    <select id="select" resultType="com.baoge.model.AcctScheduleJobLog">
+        SELECT
+        name                       name,
+        bean_class                 beanClass,
+        job_start                  jobStart,
+        job_end                    jobEnd,
+        exception_info             exceptionInfo
+        FROM
+        acct_schedule_job_log
+        <where>
+            <trim suffixOverrides="and">
+                <if test="name != null and name != ''">
+                    and name = #{name}
+                </if>
+                <if test="beanClass != null and beanClass != ''">
+                    and bean_class = #{beanClass}
+                </if>
+            </trim>
+        </where>
+    </select>
+
+    <update id="updateAcctScheduleJobLogById" parameterType="com.baoge.model.AcctScheduleJobLog">
+        update acct_schedule_job_log
+        <set>
+            <if test="name!=null">
+                name = #{name},
+            </if>
+            <if test="beanClass!=null">
+                bean_class = #{beanClass},
+            </if>
+            <if test="jobStart!=null">
+                job_start = #{jobStart},
+            </if>
+            <if test="jobEnd!=null">
+                job_end = #{jobEnd},
+            </if>
+            <if test="exceptionInfo!=null">
+                exception_info = #{exceptionInfo}
+            </if>
+        </set>
+        where id =#{id}
+    </update>
+
+    <delete id="deleteById">
+        DELETE
+        FROM
+            acct_schedule_job_log
+        WHERE
+            id =#{id}
+    </delete>
+</mapper>

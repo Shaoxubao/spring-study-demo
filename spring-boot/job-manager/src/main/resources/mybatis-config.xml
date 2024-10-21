@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+    PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+	<settings>
+		<!-- 这个配置使全局的映射器启用或禁用缓存 -->  
+        <setting name="cacheEnabled" value="true" />  
+        <!-- 全局启用或禁用延迟加载。当禁用时，所有关联对象都会即时加载 -->  
+        <setting name="lazyLoadingEnabled" value="true" />
+		<!-- 打印查询语句 -->
+		<setting name="logImpl" value="STDOUT_LOGGING" />
+		<!--设置启用数据库字段下划线映射到java对象的驼峰式命名属性，默认为false-->
+		<setting name="mapUnderscoreToCamelCase" value="true"/>
+	</settings>
+	<typeAliases>
+		<!--&lt;!&ndash; 分页 &ndash;&gt;-->
+		<typeAlias type="com.baoge.pageplugin.Page" alias="Page"/>
+
+	</typeAliases>
+	<plugins>
+		<plugin interceptor="com.baoge.pageplugin.PagePlugin">
+			<property name="dialect" value="mysql"/>
+			<property name="pageSqlId" value="listPage"/>
+		</plugin>
+	</plugins>
+
+</configuration>

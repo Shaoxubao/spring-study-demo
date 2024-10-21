@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baoge.mapper.AcctScheduleJobMapper">
+
+    <select id="getInitJob" resultType="com.baoge.model.AcctScheduleJob">
+        select  * from acct_schedule_job
+        <where>
+            <if test="status != null" >
+                and status = #{status}
+            </if>
+            <if test="taskSort != null" >
+                and task_sort = #{taskSort}
+            </if>
+        </where>
+       union
+       select  *  from acct_schedule_job where bean_class = 'com.baoge.job.ManageTaskJob'
+    </select>
+
+    <select id="getJobByBeanClass"  resultType="com.baoge.model.AcctScheduleJob">
+        select
+            *
+        from
+            acct_schedule_job
+        where status=1 and bean_class = #{beanClass}
+    </select>
+
+    <update id="updateJobStatus">
+        update acct_schedule_job set status = #{status} where  id = #{id}
+    </update>
+
+</mapper>
