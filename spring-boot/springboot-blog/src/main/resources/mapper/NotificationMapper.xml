@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baoge.mapper.NotificationMapper">
+
+    <resultMap id="BaseResultMap" type="com.baoge.entity.Notification">
+            <id property="id" column="id" jdbcType="VARCHAR"/>
+            <result property="primaryTitle" column="primary_title" jdbcType="VARCHAR"/>
+            <result property="subtitle" column="subtitle" jdbcType="VARCHAR"/>
+            <result property="keywords" column="keywords" jdbcType="VARCHAR"/>
+            <result property="publicScope" column="public_scope" jdbcType="VARCHAR"/>
+            <result property="publishSource" column="publish_source" jdbcType="VARCHAR"/>
+            <result property="publishTime" column="publish_time" jdbcType="TIMESTAMP"/>
+            <result property="content" column="content" jdbcType="VARCHAR"/>
+            <result property="firstClass" column="first_class" jdbcType="VARCHAR"/>
+            <result property="secondClass" column="second_class" jdbcType="VARCHAR"/>
+            <result property="fliePath" column="flie_path" jdbcType="VARCHAR"/>
+            <result property="createUserId" column="create_user_id" jdbcType="VARCHAR"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,primary_title,subtitle,
+        keywords,public_scope,publish_source,
+        publish_time,content,first_class,
+        second_class,flie_path,create_user_id,create_time,update_time
+    </sql>
+    <select id="select" parameterType="com.baoge.entity.Notification" resultMap="BaseResultMap">
+        SELECT
+          <include refid="Base_Column_List"></include>
+        FROM
+        notification
+        <where>
+            <if test="primaryTitle != null and primaryTitle != ''">
+                and  primary_title  like concat('%',#{primaryTitle},'%')
+            </if>
+            <if test="subtitle != null and subtitle != ''">
+                and  subtitle like concat('%',#{subtitle},'%')
+            </if>
+            <if test="keywords != null and keywords != ''">
+                and  keywords like concat('%',#{keywords},'%')
+            </if>
+            <if test="publicScope != null and publicScope != ''">
+                and  public_scope = #{publicScope}
+            </if>
+            <if test="publishSource != null and publishSource != ''">
+                and  publish_source like concat('%',#{publishSource},'%')
+            </if>
+            <if test="publishTime != null and publishTime != ''">
+                and DATE_FORMAT(publish_time, '%Y-%m-%d') =DATE_FORMAT(#{publishTime}, '%Y-%m-%d')
+            </if>
+            <if test="content != null and content != ''">
+                and  content like concat('%',#{content},'%')
+            </if>
+            <if test="firstClass != null and firstClass != ''">
+                and  first_class = concat('%',#{firstClass},'%')
+            </if>
+            <if test="secondClass != null and secondClass != ''">
+                and  second_class = concat('%',#{secondClass},'%')
+            </if>
+        </where>
+    </select>
+</mapper>

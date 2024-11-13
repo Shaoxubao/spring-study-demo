@@ -37,6 +37,7 @@
         <module>spring-boot-webservice</module>
         <module>shiro-jwt</module>
         <module>job-manager</module>
+        <module>springboot-blog</module>
     </modules>
 
 </project>
