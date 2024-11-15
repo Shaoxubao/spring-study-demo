@@ -8,6 +8,8 @@ package com.baoge.config;
  */
 import com.baomidou.mybatisplus.autoconfigure.ConfigurationCustomizer;
 import com.baomidou.mybatisplus.extension.MybatisMapWrapperFactory;
+import com.github.pagehelper.PageInterceptor;
+import org.apache.ibatis.plugin.Interceptor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -18,5 +20,9 @@ public class MybatisConfig {
         return configuration -> configuration.setObjectWrapperFactory(new MybatisMapWrapperFactory());
     }
 
+    @Bean
+    public Interceptor[] plugins() {
+        return new Interceptor[]{new PageInterceptor()};
+    }
 
 }

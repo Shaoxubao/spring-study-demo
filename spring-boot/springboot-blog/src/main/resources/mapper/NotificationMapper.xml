@@ -61,5 +61,6 @@
                 and  second_class = concat('%',#{secondClass},'%')
             </if>
         </where>
+        order by publish_time desc
     </select>
 </mapper>

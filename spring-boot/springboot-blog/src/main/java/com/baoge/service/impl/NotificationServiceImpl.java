@@ -5,10 +5,8 @@ import com.baoge.entity.Notification;
 import com.baoge.mapper.NotificationMapper;
 import com.baoge.service.NotificationService;
 import com.baoge.utils.JsonResponse;
-import com.baoge.utils.PageUtil;
-import com.github.pagehelper.Page;
+import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import com.github.pagehelper.page.PageMethod;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -27,11 +25,10 @@ public class NotificationServiceImpl extends PageHelperServiceImpl<NotificationM
 
     @Override
     public JsonResponse select(Notification req) {
-        Page page = PageMethod.startPage(req.getPageNum(), req.getPageSize());
-
-        List list = notificationMapper.select(req);
-        PageInfo info = PageUtil.getResult(page, list, Object.class);
-        return JsonResponse.success(info);
+        PageHelper.startPage(req.getPageNum(), req.getPageSize());
+        List<Notification> list = notificationMapper.select(req);
+        PageInfo<Notification> pageInfo = new PageInfo<>(list);
+        return JsonResponse.success(pageInfo);
     }
 }
 
