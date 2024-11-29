@@ -65,7 +65,7 @@ public class CategoryTree {
                     Category categoryNew = new Category(id, name, parentId);
                     categories.add(categoryNew);
                 }
-
+                // 返回树形结构
                 List<TreeData> result = buildPlantResultData(categories);
                 System.out.println(result);
 
@@ -126,15 +126,25 @@ public class CategoryTree {
     }
 
     private static TreeData findChildren(TreeData tree, List<TreeData> list) {
-        list.stream()
+        List<TreeData> treeDataList = list.stream()
                 .filter(node -> tree.getId() == node.getParentId())
-                .collect(Collectors.toList())
-                .forEach(node -> {
-                    if (tree.getChildren() == null) {
-                        tree.setChildren(new ArrayList<>());
-                    }
-                    tree.getChildren().add(findChildren(node, list));
-                });
+                .collect(Collectors.toList());
+        for (TreeData treeData : treeDataList) {
+            if (tree.getChildren() == null) {
+                tree.setChildren(new ArrayList<>());
+            }
+            tree.getChildren().add(findChildren(treeData, list));
+        }
+
+//        list.stream()
+//                .filter(node -> tree.getId() == node.getParentId())
+//                .collect(Collectors.toList())
+//                .forEach(node -> {
+//                    if (tree.getChildren() == null) {
+//                        tree.setChildren(new ArrayList<>());
+//                    }
+//                    tree.getChildren().add(findChildren(node, list));
+//                });
         return tree;
     }
 }
