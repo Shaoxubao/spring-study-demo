@@ -27,10 +27,10 @@ public class CodeGenerator {
         // 数据源配置
         DataSourceConfig dsc = new DataSourceConfig();
         //改成你自己的数据库
-        dsc.setUrl("jdbc:mysql://500ebd9e.nat123.fun:11464/virtual_power_pro_419?useUnicode=true&useSSL=false&characterEncoding=utf8");
+        dsc.setUrl("jdbc:mysql://127.0.0.1:3306/virtual_power_1125?useUnicode=true&useSSL=false&characterEncoding=utf8");
         dsc.setDriverName("com.mysql.cj.jdbc.Driver");
         dsc.setUsername("root");//mysql用户名
-        dsc.setPassword("123456@com");//mysql密码
+        dsc.setPassword("123456");//mysql密码
         mpg.setDataSource(dsc);
  
         // 包配置
