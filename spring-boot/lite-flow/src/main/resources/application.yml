@@ -1,0 +1,10 @@
+server:
+    port: 9116 # 服务端口
+spring:
+    application:
+        name: lite-flow # 服务名称
+liteflow:
+    enable: true
+    rule-source: config/flow.xml
+    print-execution-log: false  #关闭执行中过程中的日志打印
+    print-banner: false         #关闭liteflow的banner打印

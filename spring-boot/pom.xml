@@ -38,6 +38,7 @@
         <module>shiro-jwt</module>
         <module>job-manager</module>
         <module>springboot-blog</module>
+        <module>lite-flow</module>
     </modules>
 
 </project>
