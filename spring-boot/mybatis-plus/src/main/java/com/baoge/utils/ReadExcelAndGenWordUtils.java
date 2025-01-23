@@ -23,7 +23,7 @@ public class ReadExcelAndGenWordUtils {
 
         try {
             String templateFileName =  Constant.TEMPLATE_UTL + "虚拟电厂能力测试报告.docx";
-            log.info("templateFileName="+templateFileName);
+            log.info("templateFileName=" + templateFileName);
             // 模板路径
             InputStream tempFileStream = PathUtil.readFileAsStream(templateFileName);
             log.info("tempFileStream=" + tempFileStream.toString());
