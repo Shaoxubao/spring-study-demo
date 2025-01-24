@@ -22,7 +22,7 @@ public class ReadExcelAndGenWordUtils {
         List<Map<String, Object>> read = reader.readAll(); // 0表示第一页，如果有多个sheet页，可以通过索引选择
 
         try {
-            String templateFileName =  Constant.TEMPLATE_UTL + "虚拟电厂能力测试报告.docx";
+            String templateFileName =  Constant.TEMPLATE_UTL + "templateNew.docx";
             log.info("templateFileName=" + templateFileName);
             // 模板路径
             InputStream tempFileStream = PathUtil.readFileAsStream(templateFileName);

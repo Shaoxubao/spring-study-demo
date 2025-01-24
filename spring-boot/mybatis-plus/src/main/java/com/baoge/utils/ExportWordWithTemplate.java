@@ -393,7 +393,7 @@ public class ExportWordWithTemplate {
     public static void main(String[] args) {
         ExportWordWithTemplate export = new ExportWordWithTemplate();
         try {
-            String templateFileName =  Constant.TEMPLATE_UTL + "虚拟电厂能力测试报告.docx";
+            String templateFileName =  Constant.TEMPLATE_UTL + "templateNew.docx";
             log.info("templateFileName=" + templateFileName);
             // 模板路径
             InputStream tempFileStream = PathUtil.readFileAsStream(templateFileName);
