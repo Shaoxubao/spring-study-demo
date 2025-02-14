@@ -23,6 +23,7 @@
         <module>java-cert</module>
         <module>common-untils</module>
         <module>java-hbase</module>
+        <module>java-flink-demo</module>
     </modules>
 
     <properties>
