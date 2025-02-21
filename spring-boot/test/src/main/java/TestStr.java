@@ -37,5 +37,9 @@ public class TestStr {
 
         String s = "123 No operations to perform.";
         System.out.println(s.contains("No operations"));
+
+
+        String abc = "abc";
+        System.out.println(abc.substring(1));
     }
 }
