@@ -40,6 +40,10 @@ public class TestStr {
 
 
         String abc = "abc";
-        System.out.println(abc.substring(1));
+        System.out.println(abc.substring(0, 1));   // a
+        System.out.println(abc.substring(1));  // bc
+
+        String whole = "10101000";
+        System.out.println(Arrays.toString(whole.split("")));
     }
 }
