@@ -1,6 +1,7 @@
 package com.baoge.service;
 
 import com.baoge.entity.ConsCurve;
+import com.baoge.entity.User;
 import com.baoge.entity.UserDO;
 import com.baoge.mapper.ConsCurve10Mapper;
 import com.baoge.mapper.UserMapper;
@@ -14,14 +15,14 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 @Service
 public class UserServiceImpl
-        extends ServiceImpl<UserMapper, UserDO> implements UserService {
+        extends ServiceImpl<UserMapper, User> implements UserService {
 
     private final UserMapper userMapper;
 
     private final ConsCurve10Mapper consCurve10Mapper;
 
     @Override
-    public UserDO getByUsername(String username, int type) {
+    public User getByUsername(String username, int type) {
         if (type == 0) {
             // xml
             log.info("query from xml");
@@ -29,8 +30,8 @@ public class UserServiceImpl
         } else {
             // QueryWrapper
             log.info("query from wrapper");
-            LambdaQueryWrapper<UserDO> queryWrapper = new LambdaQueryWrapper();
-            queryWrapper.eq(UserDO::getUsername, username);
+            LambdaQueryWrapper<User> queryWrapper = new LambdaQueryWrapper();
+            queryWrapper.eq(User::getUsername, username);
 //            queryWrapper.eq(UserDO::getStatus, 1);
             return userMapper.selectOne(queryWrapper);
         }

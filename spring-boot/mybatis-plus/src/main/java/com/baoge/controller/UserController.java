@@ -1,6 +1,7 @@
 package com.baoge.controller;
 
 import com.baoge.entity.ConsCurve;
+import com.baoge.entity.User;
 import com.baoge.entity.UserDO;
 import com.baoge.service.UserService;
 import com.baoge.utils.ExcelUtils;
@@ -20,8 +21,8 @@ public class UserController {
     private final UserService userService;
 
     @GetMapping("/user/info/{id}")
-    public UserDO getUserInfoById(@PathVariable("id") long id) {
-        UserDO userDO = userService.getById(id);
+    public User getUserInfoById(@PathVariable("id") long id) {
+        User userDO = userService.getById(id);
         return userDO;
     }
 
@@ -61,10 +62,10 @@ public class UserController {
 
 
     @GetMapping("/user/info")
-    public UserDO getUserInfoByUsername(@RequestParam("username") String username,
+    public User getUserInfoByUsername(@RequestParam("username") String username,
                                         @RequestParam("type") int type) {
-        UserDO userDO = userService.getByUsername(username, type);
-        return userDO;
+        User user = userService.getByUsername(username, type);
+        return user;
     }
 
 
