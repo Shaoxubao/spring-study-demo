@@ -40,6 +40,7 @@
         <module>springboot-blog</module>
         <module>lite-flow</module>
         <module>nacos2.4</module>
+        <module>spring-boot-mail</module>
     </modules>
 
 </project>
