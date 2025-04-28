@@ -2,7 +2,9 @@ package com.baoge.utils;
  
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.serializer.SerializerFeature;
- 
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 import java.lang.management.ManagementFactory;
 import java.lang.management.MemoryMXBean;
 import java.lang.management.MemoryUsage;
@@ -15,6 +17,8 @@ import lombok.extern.slf4j.Slf4j;
 public class MonitorServer {
     private static final long GB = 1024 * 1024 * 1024;
     private static final long MB = 1024 * 1024;
+
+    private static final long B = 1024;
     private static final DecimalFormat decimalFormat = new DecimalFormat("0.0");
  
     public MonitorInfoModel monitor() {
@@ -84,7 +88,44 @@ public class MonitorServer {
             monitorInfoModel.setArch(arch);
             monitorInfoModel.setName(name);
         }
+        // 获取系统内存信息free -m
+        printMemoryUsage(monitorInfoModel);
         return monitorInfoModel;
+    }
+
+    public void printMemoryUsage( MonitorInfoModel monitorInfoModel) {
+        try {
+            Process process = Runtime.getRuntime().exec("free -m");
+            BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
+            String line;
+            long total = 0, used = 0, available = 0;
+
+            // 解析free命令的输出
+            while ((line = reader.readLine()) != null) {
+                if (line.startsWith("Mem:")) {
+                    String[] parts = line.split("\\s+");
+                    total = Long.parseLong(parts[1]);
+                    used = Long.parseLong(parts[2]);
+                    available = Long.parseLong(parts[6]);
+                    break;
+                }
+            }
+            System.out.printf("Memory Usage: [Used: %d MB] [Available: %d MB] [Total: %d MB]%n",
+                    used, available, total);
+
+            String totalMemoryInfoNew = decimalFormat.format(1.0 * total / B) + "GB";
+            String freeMemoryInfoNew = decimalFormat.format(1.0 * available / B) + "GB";
+            String useMemoryInfoNew = decimalFormat.format(1.0 * used / B) + "GB";
+            monitorInfoModel.setTotalMemoryInfoNew(totalMemoryInfoNew);
+            monitorInfoModel.setFreeMemoryInfoNew(freeMemoryInfoNew);
+            monitorInfoModel.setUseMemoryInfoNew(useMemoryInfoNew);
+            // 计算内存使用率
+            String memoryUseRatioInfo = decimalFormat.format((1.0 * (total - available) / total * 100)) + "%";
+            monitorInfoModel.setMemoryUseRatioInfoNew(memoryUseRatioInfo);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
  
     public static void main(String[] args) throws InterruptedException {

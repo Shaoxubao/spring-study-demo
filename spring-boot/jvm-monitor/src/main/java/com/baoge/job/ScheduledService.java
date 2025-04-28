@@ -62,10 +62,10 @@ public class ScheduledService {
         info.setDataDate(TimeUtils.converToDate(TimeUtils.getCurrentDate() + " 00:00:00"));
         info.setCreateTime(DateUtil.date());
         info.setCpuLoad(infoModel.getCpuLoadInfo());
-        info.setTotalMemory(infoModel.getTotalMemoryInfo());
-        info.setFreeMemory(infoModel.getFreeMemoryInfo());
-        info.setUseMemory(infoModel.getUseMemoryInfo());
-        info.setUserMemoryPercent(infoModel.getMemoryUseRatioInfo());
+        info.setTotalMemory(infoModel.getTotalMemoryInfoNew());
+        info.setFreeMemory(infoModel.getFreeMemoryInfoNew());
+        info.setUseMemory(infoModel.getUseMemoryInfoNew());
+        info.setUserMemoryPercent(infoModel.getMemoryUseRatioInfoNew());
         info.setDiskUsed(diskInfo.getUsed());
         info.setDiskAvailable(diskInfo.getAvailable());
         info.setDiskUsePercent(diskInfo.getUsePercent());

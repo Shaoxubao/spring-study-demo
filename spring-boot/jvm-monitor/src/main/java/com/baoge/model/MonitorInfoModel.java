@@ -84,6 +84,26 @@ public class MonitorInfoModel {
      * 系统名称
      */
     private String name;
- 
+
+
+    /**
+     * 系统总内存信息
+     */
+    private String totalMemoryInfoNew;
+
+    /**
+     * 系统空闲内存信息
+     */
+    private String freeMemoryInfoNew;
+
+    /**
+     * 使用中的内存信息
+     */
+    private String useMemoryInfoNew;
+
+    /**
+     * 内存使用率
+     */
+    private String memoryUseRatioInfoNew;
  
 }
