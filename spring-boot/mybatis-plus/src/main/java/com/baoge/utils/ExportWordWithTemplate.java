@@ -2,7 +2,7 @@ package com.baoge.utils;
 
 import com.deepoove.poi.XWPFTemplate;
 import com.deepoove.poi.config.Configure;
-import com.deepoove.poi.policy.HackLoopTableRenderPolicy;
+import com.deepoove.poi.plugin.table.LoopRowTableRenderPolicy;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.ObjectUtils;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
@@ -32,8 +32,8 @@ public class ExportWordWithTemplate {
         try {
             log.info("开始生成Word..........");
             //渲染表格  动态行
-            HackLoopTableRenderPolicy policy = new HackLoopTableRenderPolicy();
-            Configure config = Configure.newBuilder()
+            LoopRowTableRenderPolicy policy = new LoopRowTableRenderPolicy();
+            Configure config = Configure.builder()
 //                    .bind("reportPcList", policy)
 //                    .bind("adjustingCapacTestList", policy)
 //                    .bind("accuracyCapacTestList", policy)
@@ -402,6 +402,7 @@ public class ExportWordWithTemplate {
             HashMap<String, Object> values = new HashMap();
             // 构造数据
             values.put("plantName", "1222");
+
             export.exportDataWord(tempFileStream, null, values);
         } catch (IOException e) {
             log.error("生成word失败，原因：", e);
