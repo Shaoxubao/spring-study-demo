@@ -6,6 +6,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.*;
 
 /**
@@ -68,7 +69,63 @@ public class PointUtils {
 
 
     public static void main(String[] args) {
-        System.out.println(getPointNumBy15("12:15"));
+//        System.out.println(getPointNumBy15("12:15"));
+
+        List<Double> stData = new ArrayList<>(96);
+        for (int i = 0; i < 96; i++) {
+            stData.add(0d);
+        }
+        int st = 50;
+        int et = 55;
+        LinkedHashMap virtualGroupCurve = getMap();
+        //                                                                    50  55
+        List<BigDecimal> actualList  = setNumScaleForPoint(virtualGroupCurve, st, et);
+        int index = 0;
+        for (int i = st - 1; i < et; i++) {
+            stData.set(i, actualList.get(index).doubleValue());
+            index++;
+        }
+
+        System.out.println(stData);
+    }
+
+    private static LinkedHashMap getMap() {
+        LinkedHashMap map = new LinkedHashMap();
+        Random random = new Random();
+       for (int i = 0; i < 96; i++) {
+            map.put("p" + i, random.nextDouble() * 100);
+        }
+        return map;
+    }
+
+    public static List<BigDecimal> setNumScaleForPoint(Map<String, Double> curveData, int startPoint, int endPoint) {
+        curveData = new CaseInsensitiveMap<>(curveData);
+        List<BigDecimal> list = new LinkedList<>();
+        for (int i = startPoint; i <= endPoint; i++) {
+            String avalue = getString(curveData, "p" + i, null);
+            //将结果除一下，保留两位小数
+            BigDecimal result =  new BigDecimal(avalue).divide(new BigDecimal(1), 2, RoundingMode.HALF_UP).abs();
+            list.add(result);
+        }
+        return list;
+    }
+
+    public static String getString( Map map, Object key, String defaultValue ) {
+        String answer = getString( map, key );
+        if ( answer == null ) {
+            answer = defaultValue;
+        }
+        return answer;
+    }
+
+    public static String getString(final Map map, final Object key) {
+        if (map != null) {
+            Object answer = map.get(key);
+            if (answer != null) {
+                return answer.toString();
+            }
+        }
+        return null;
     }
 
 }
