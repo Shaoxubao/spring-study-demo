@@ -6,6 +6,7 @@ import com.deepoove.poi.data.Charts;
 import com.deepoove.poi.plugin.table.LoopColumnTableRenderPolicy;
 import com.deepoove.poi.plugin.table.LoopRowTableRenderPolicy;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.ibatis.jdbc.Null;
 
 import javax.servlet.http.HttpServletResponse;
 import java.io.*;
@@ -117,18 +118,14 @@ public class ExportWordWithNewTemplate {
         List<Double> randomList = new ArrayList<>();
         Random random = new Random();
 
-        for (int i = 0; i < 20; i++) {  // 19
-            randomList.add(0.0);
+        for (int i = 0; i < 96; i++) {
+            randomList.add(null);
         }
 
-        for (int i = 20; i < 25; i++) {  // 5
+        for (int i = 20; i < 25; i++) {
             // 生成 0.0（包含）到 100.0（不包含）的随机数
             double randomValue = random.nextDouble() * 100;
-            randomList.add(randomValue);
-        }
-
-        for (int i = 25; i < 96; i++) {
-            randomList.add(0.0);
+            randomList.set(i, randomValue);
         }
 
         System.out.println(randomList);
