@@ -21,5 +21,6 @@ public class TestDate {
         Period period = Period.between(date1, date2);
         System.out.println("Years: " + period.getYears() + ", Months: " + period.getMonths() + ", Days: " + period.getDays());
 
+        System.out.println("2025-09-09 14:00:00".substring(0, 7).replaceAll("-", ""));
     }
 }
