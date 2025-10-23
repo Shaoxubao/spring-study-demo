@@ -32,6 +32,7 @@ public class SM2SM4Example {
         
         // 5. 接收方使用SM2私钥解密SM4密钥
         byte[] decryptedSm4Key = SM2Util.decrypt(encryptedSm4Key, privateKey);
+        System.out.println("解密后的SM4密钥: " + Hex.toHexString(decryptedSm4Key));
         
         // 6. 使用解密后的SM4密钥解密数据
         byte[] decryptedData = SM4CBCUtils.decrypt(encryptedData, decryptedSm4Key);
