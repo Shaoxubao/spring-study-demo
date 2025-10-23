@@ -20,6 +20,7 @@ public class SM2SM4Example {
         // 2. 生成随机的SM4密钥
         byte[] sm4Key = new byte[16]; // SM4密钥长度16字节(128位)
         new SecureRandom().nextBytes(sm4Key); // 生成一个安全的随机字节数组作为SM4算法的加密密钥
+        System.out.println("SM4密钥: " + Hex.toHexString(sm4Key));
         
         // 3. 使用SM2公钥加密SM4密钥
         byte[] encryptedSm4Key = SM2Util.encrypt(sm4Key, publicKey);
