@@ -35,6 +35,11 @@
             <artifactId>bcprov-jdk15on</artifactId>
             <version>1.70</version>
         </dependency>
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-crypto</artifactId>
+            <version>5.8.35</version> <!-- 请根据实际情况选择版本 -->
+        </dependency>
     </dependencies>
 
 </project>
