@@ -1,0 +1,11 @@
+# 开发环境配置
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/blog?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC&useSSL=false
+    username: root
+    password: ENC(1a58dc14ca99a3adc373f7cede799d04)
+
+# 开发环境SM4密钥（与生产环境不同）
+sm4:
+  encrypt:
+    key: "dev1234567890123"  # 开发环境密钥

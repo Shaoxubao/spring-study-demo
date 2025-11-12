@@ -1,0 +1,48 @@
+# 应用配置
+server:
+  port: 8080
+
+spring:
+  application:
+    name: sm4-demo
+  profiles:
+    active: dev
+  # 数据源配置（使用SM4加密）
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/babytun?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC&useSSL=false
+    username: root
+    password: ENC(1a58dc14ca99a3adc373f7cede799d04)
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+# SM4加密配置
+sm4:
+  encrypt:
+    key: "1234567890123456"  # 16字节密钥
+    algorithm: "SM4/ECB/PKCS5Padding"
+    enable-advanced: true  # 是否使用高级模式（GCM）
+
+# Jasypt配置
+jasypt:
+  encryptor:
+    bean: sm4StringEncryptor  # 指定使用自定义的SM4加密器
+    property:
+      prefix: "ENC("
+      suffix: ")"
+
+# 自定义配置（加密示例）
+app:
+  config:
+    wechat:
+      app-id: "wx1234567890abcdef"
+      app-secret: ENC(9Ut7vF4cN2qW8rP3xZ6mK1==)
+    alipay:
+      app-id: "2021000123456789"
+      private-key: ENC(5Yr8vG3bN1qW7rP2xZ4mK9==)
+    oss:
+      access-key: ENC(3Ww6kf9vJzW2rQ5pX8mK1Q==)
+      secret-key: ENC(7Yt2vG5bN8qW4rP1xZ3mK6==)
+
+# 日志配置
+logging:
+  level:
+    com.example.sm4demo: DEBUG

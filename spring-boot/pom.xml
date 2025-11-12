@@ -42,6 +42,7 @@
         <module>nacos2.4</module>
         <module>spring-boot-mail</module>
         <module>poi-demo</module>
+        <module>spring-boot-jasypt</module>
     </modules>
 
 </project>
