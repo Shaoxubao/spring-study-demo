@@ -17,7 +17,7 @@ public class CodeGenerator {
         mpg.setTemplateEngine(new FreemarkerTemplateEngine());
  
         GlobalConfig gc = new GlobalConfig();
-        gc.setAuthor("baoge"); // 作者信息：欢迎关注程序员良枫
+        gc.setAuthor(""); // 作者信息：欢迎关注程序员良枫
         gc.setOutputDir(System.getProperty("user.dir") + "/src/main/java");//设置生成的路径
         gc.setServiceName("%sService");//去掉服务接口service前缀
         gc.setFileOverride(false);//是否覆盖文件。如果代码直接生成到生产代码里面，请谨慎启用，避免覆盖掉项目代码。
@@ -27,7 +27,7 @@ public class CodeGenerator {
         // 数据源配置
         DataSourceConfig dsc = new DataSourceConfig();
         //改成你自己的数据库
-        dsc.setUrl("jdbc:mysql://127.0.0.1:3306/common_sj?useUnicode=true&useSSL=false&characterEncoding=utf8");
+        dsc.setUrl("jdbc:mysql://127.0.0.1:3306/virtual_power?useUnicode=true&useSSL=false&characterEncoding=utf8");
         dsc.setDriverName("com.mysql.cj.jdbc.Driver");
         dsc.setUsername("root");//mysql用户名
         dsc.setPassword("123456");//mysql密码

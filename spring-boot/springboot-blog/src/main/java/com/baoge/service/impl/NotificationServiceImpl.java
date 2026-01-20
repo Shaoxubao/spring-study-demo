@@ -1,16 +1,15 @@
 package com.baoge.service.impl;
 
-
 import com.baoge.entity.Notification;
 import com.baoge.mapper.NotificationMapper;
 import com.baoge.service.NotificationService;
 import com.baoge.utils.JsonResponse;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
+import java.util.Optional;
 
 /**
  * @author wangxing
@@ -18,16 +17,20 @@ import java.util.List;
  * @createDate 2024-11-07 10:27:17
  */
 @Service
+@RequiredArgsConstructor
 public class NotificationServiceImpl extends PageHelperServiceImpl<NotificationMapper, Notification>
         implements NotificationService {
-    @Autowired
-    private NotificationMapper notificationMapper;
+
+    private static final int DEFAULT_PAGE_NUM = 1;
+    private static final int DEFAULT_PAGE_SIZE = 10;
 
     @Override
     public JsonResponse select(Notification req) {
-        PageHelper.startPage(req.getPageNum(), req.getPageSize());
-        List<Notification> list = notificationMapper.select(req);
-        PageInfo<Notification> pageInfo = new PageInfo<>(list);
+        int pageNum = Optional.ofNullable(req.getPageNum()).orElse(DEFAULT_PAGE_NUM);
+        int pageSize = Optional.ofNullable(req.getPageSize()).orElse(DEFAULT_PAGE_SIZE);
+        
+        PageHelper.startPage(pageNum, pageSize);
+        PageInfo<Notification> pageInfo = new PageInfo<>(baseMapper.select(req));
         return JsonResponse.success(pageInfo);
     }
 }
