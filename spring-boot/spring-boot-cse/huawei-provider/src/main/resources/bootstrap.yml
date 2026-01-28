@@ -9,10 +9,12 @@ spring:
       discovery:
         enabled: true
         watch: false
-        address: http://192.168.43.146:30100
+        address: http://10.238.49.231:30100
         appName: hauweicloud-application
         serviceName: ${spring.application.name}
         version: 0.0.1
       config:
+        enabled: true
         serverType: kie
-        serverAddr: http://192.168.43.146:30110
+        serverAddr: http://10.238.49.231:30110
+        fileSource: com.baoge.yaml

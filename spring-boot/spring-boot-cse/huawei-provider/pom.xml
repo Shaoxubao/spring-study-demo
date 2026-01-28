@@ -29,6 +29,11 @@
             <groupId>com.huaweicloud</groupId>
             <artifactId>spring-cloud-starter-huawei-service-engine</artifactId>
         </dependency>
+        <!-- 华为CSE配置中心依赖（如需配置中心能力） -->
+        <dependency>
+            <groupId>com.huaweicloud</groupId>
+            <artifactId>spring-cloud-starter-huawei-config</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
