@@ -230,7 +230,8 @@ public class WeatherDataSchedule {
         return cityMap.get(cityName);
     }
 
-    @Scheduled(cron = "0 0 * * * ?")
+//    @Scheduled(cron = "0 0 * * * ?")   // 每小时
+    @Scheduled(cron = "0 1/5 * * * ?")       // 从第 1 分钟开始，每 5 分钟一次
     public void crawlWeatherData() {
         logger.info("开始执行天气数据爬取定时任务");
 
@@ -245,7 +246,6 @@ public class WeatherDataSchedule {
         weatherUrlMap.put("国网商洛供电公司", "https://www.lishidata.com/area/%E9%99%95%E8%A5%BF/%E5%95%86%E6%B4%9B.html");
         weatherUrlMap.put("国网延安供电公司", "https://www.lishidata.com/area/%E9%99%95%E8%A5%BF/%E5%BB%B6%E5%AE%89.html");
         weatherUrlMap.put("国网榆林供电公司", "https://www.lishidata.com/area/%E9%99%95%E8%A5%BF/%E6%A6%86%E6%9E%97.html");
-        weatherUrlMap.put("国网西咸供电公司", "https://www.lishidata.com/area/%E9%99%95%E8%A5%BF/%E8%A5%BF%E5%92%B8.html");
 
         try (Connection conn = getConnection()) {
             for (Map.Entry<String, String> entry : weatherUrlMap.entrySet()) {
