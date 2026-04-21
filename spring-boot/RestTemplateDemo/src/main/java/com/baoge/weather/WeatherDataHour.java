@@ -2,6 +2,7 @@ package com.baoge.weather;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
+import java.util.Date;
 
 public class WeatherDataHour {
     private Long id;
@@ -24,8 +25,9 @@ public class WeatherDataHour {
     private BigDecimal windDirection;
     private BigDecimal windGusts;
     private BigDecimal windSpeed;
+    private Date createTime;
 
-    // Getter / Setter
+       // Getter / Setter
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }
     public LocalDateTime getTime() { return time; }
@@ -66,4 +68,6 @@ public class WeatherDataHour {
     public void setWindGusts(BigDecimal windGusts) { this.windGusts = windGusts; }
     public BigDecimal getWindSpeed() { return windSpeed; }
     public void setWindSpeed(BigDecimal windSpeed) { this.windSpeed = windSpeed; }
+    public Date getCreateTime() { return createTime; }
+    public void setCreateTime(Date createTime) { this.createTime = createTime; }
 }

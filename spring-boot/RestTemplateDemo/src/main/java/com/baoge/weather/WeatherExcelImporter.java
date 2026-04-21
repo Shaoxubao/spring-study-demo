@@ -50,8 +50,8 @@ public class WeatherExcelImporter {
     private static final DateTimeFormatter TIME_FORMATTER = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
     private static final String INSERT_SQL = "INSERT IGNORE INTO weather_data_hour " +
             "(time, city_no, city_name, load_mw, temp, humidity, weather_code, is_rain, hour, day_of_week, is_holiday, " +
-            "shortwave_radiation, direct_radiation, diffuse_radiation, sunshine_duration, wind_level, wind_direction, wind_gusts, wind_speed) " +
-            "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+            "shortwave_radiation, direct_radiation, diffuse_radiation, sunshine_duration, wind_level, wind_direction, wind_gusts, wind_speed, create_time) " +
+            "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
     private String excelDataPath;
 
@@ -207,6 +207,7 @@ public class WeatherExcelImporter {
         ps.setBigDecimal(17, data.getWindDirection());
         ps.setBigDecimal(18, data.getWindGusts());
         ps.setBigDecimal(19, data.getWindSpeed());
+        ps.setObject(20, LocalDateTime.now());
     }
 
     private String parseCityName(String region) {

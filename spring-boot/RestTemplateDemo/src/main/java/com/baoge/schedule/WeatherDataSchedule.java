@@ -82,15 +82,15 @@ public class WeatherDataSchedule {
                                           BigDecimal windSpeed) throws SQLException {
         String sql = "INSERT INTO weather_data (time, city_no, city_name, temp, humidity, weather_code, is_rain, " +
                 "hour, day_of_week, is_holiday, shortwave_radiation, direct_radiation, diffuse_radiation, " +
-                "sunshine_duration, wind_level, wind_direction, wind_gusts, wind_speed) " +
-                "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) " +
+                "sunshine_duration, wind_level, wind_direction, wind_gusts, wind_speed, create_time) " +
+                "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) " +
                 "ON DUPLICATE KEY UPDATE " +
                 "temp = VALUES(temp), humidity = VALUES(humidity), weather_code = VALUES(weather_code), " +
                 "is_rain = VALUES(is_rain), day_of_week = VALUES(day_of_week), is_holiday = VALUES(is_holiday), " +
                 "shortwave_radiation = VALUES(shortwave_radiation), direct_radiation = VALUES(direct_radiation), " +
                 "diffuse_radiation = VALUES(diffuse_radiation), sunshine_duration = VALUES(sunshine_duration), " +
                 "wind_level = VALUES(wind_level), wind_direction = VALUES(wind_direction), " +
-                "wind_gusts = VALUES(wind_gusts), wind_speed = VALUES(wind_speed)";
+                "wind_gusts = VALUES(wind_gusts), wind_speed = VALUES(wind_speed), create_time = VALUES(create_time)";
 
         try (PreparedStatement pstmt = conn.prepareStatement(sql)) {
             pstmt.setTimestamp(1, Timestamp.valueOf(time));
@@ -111,6 +111,7 @@ public class WeatherDataSchedule {
             pstmt.setBigDecimal(16, windDirection);
             pstmt.setBigDecimal(17, windGusts);
             pstmt.setBigDecimal(18, windSpeed);
+            pstmt.setTimestamp(19, Timestamp.valueOf(LocalDateTime.now()));
             pstmt.executeUpdate();
         }
     }
