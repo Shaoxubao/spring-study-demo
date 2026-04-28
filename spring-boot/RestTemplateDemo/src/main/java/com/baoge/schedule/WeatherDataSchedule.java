@@ -231,9 +231,9 @@ public class WeatherDataSchedule {
         return cityMap.get(cityName);
     }
 
-    @Scheduled(cron = "0 0 */6 * * ?")   // 每6小时
+//    @Scheduled(cron = "0 0 */6 * * ?")   // 每6小时
 //    @Scheduled(cron = "0 0 * * * ?")   // 每小时
-//    @Scheduled(cron = "0 1/5 * * * ?")       // 从第 1 分钟开始，每 5 分钟一次
+    @Scheduled(cron = "0 1/5 * * * ?")       // 从第 1 分钟开始，每 5 分钟一次
     public void crawlWeatherData() {
         logger.info("开始执行天气数据爬取定时任务");
 
